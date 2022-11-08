@@ -1,0 +1,429 @@
+.account-edit-container {
+  width: 100%;
+  display: flex;
+  overflow: auto;
+  min-height: 100vh;
+  align-items: center;
+  flex-direction: column;
+}
+.account-edit-account-edit {
+  width: 100%;
+  height: 1080px;
+  display: flex;
+  overflow: hidden;
+  position: relative;
+  align-items: flex-start;
+  flex-shrink: 0;
+  border-color: transparent;
+  background-color: rgba(255, 255, 255, 1);
+}
+.account-edit-back-ground {
+  top: -12px;
+  left: -146px;
+  width: 2211px;
+  height: 1104px;
+  display: flex;
+  position: absolute;
+  align-items: flex-start;
+  flex-shrink: 0;
+  border-color: transparent;
+}
+.account-edit-i-m-a-g-e5403411 {
+  top: 0px;
+  left: 0px;
+  width: 2211px;
+  height: 1104px;
+  position: absolute;
+  border-color: transparent;
+}
+.account-edit-rectangle13 {
+  top: 177px;
+  left: 146px;
+  width: 1920px;
+  height: 903px;
+  position: absolute;
+  border-color: transparent;
+}
+.account-edit-text {
+  top: 80px;
+  left: 1250px;
+  color: rgb(45, 34, 121);
+  width: 809px;
+  height: auto;
+  position: absolute;
+  font-size: 200px;
+  align-self: auto;
+  font-style: Regular;
+  text-align: left;
+  font-family: Russo One;
+  font-weight: 400;
+  line-height: 32px;
+  font-stretch: normal;
+  margin-right: 0;
+  margin-bottom: 0;
+  text-decoration: none;
+}
+.account-edit-text01 {
+  color: #2d2279;
+  font-size: 200px;
+}
+.account-edit-text02 {
+  color: #d9d9d9;
+  font-size: 50px;
+}
+.account-edit-text03 {
+  color: #2d2279;
+  font-size: 200px;
+}
+.account-edit-text04 {
+  color: #d9d9d9;
+  font-size: 50px;
+}
+.account-edit-text05 {
+  color: #2d2279;
+  font-size: 200px;
+}
+.account-edit-text06 {
+  color: #d9d9d9;
+  font-size: 50px;
+}
+.account-edit-rectangle99 {
+  top: 294px;
+  left: 125px;
+  width: 1711px;
+  height: 717px;
+  position: absolute;
+  border-color: transparent;
+  border-radius: 20px;
+}
+.account-edit-framemodernlarge-base {
+  top: 836px;
+  left: 1290px;
+  width: 81px;
+  display: flex;
+  padding: 16px 32px;
+  position: absolute;
+  box-shadow: 0px 4px 12px 0px rgba(45, 34, 121, 0.20000000298023224) ;
+  align-items: flex-start;
+  border-color: transparent;
+  border-radius: 8px;
+  flex-direction: column;
+  background-color: rgba(45, 34, 121, 1);
+}
+.account-edit-content {
+  display: flex;
+  overflow: hidden;
+  position: relative;
+  align-self: stretch;
+  align-items: flex-start;
+  border-color: transparent;
+}
+.account-edit-text07 {
+  color: rgba(217, 217, 217, 1);
+  height: auto;
+  font-size: 24px;
+  align-self: auto;
+  font-style: Bold;
+  text-align: left;
+  font-family: Inter;
+  font-weight: 700;
+  line-height: 32px;
+  font-stretch: normal;
+  margin-right: 0;
+  margin-bottom: 0;
+  text-decoration: none;
+}
+.account-edit-basic-outline-button {
+  top: 900px;
+  left: 764px;
+  width: 166px;
+  display: flex;
+  position: absolute;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25) ;
+  align-items: flex-start;
+  border-color: transparent;
+  flex-direction: column;
+}
+.account-edit-framebasic-outlinelarge-base {
+  display: flex;
+  padding: 16px 32px;
+  position: relative;
+  align-self: stretch;
+  align-items: flex-start;
+  border-color: rgba(45, 34, 121, 1);
+  border-style: solid;
+  border-width: 2px;
+  border-radius: 8px;
+  flex-direction: column;
+  background-color: rgba(45, 34, 121, 1);
+}
+.account-edit-content1 {
+  display: flex;
+  overflow: hidden;
+  position: relative;
+  align-self: stretch;
+  align-items: flex-start;
+  border-color: transparent;
+}
+.account-edit-text08 {
+  color: rgba(217, 217, 217, 1);
+  height: auto;
+  font-size: 24px;
+  align-self: auto;
+  font-style: Bold;
+  text-align: left;
+  font-family: Inter;
+  font-weight: 700;
+  line-height: 32px;
+  font-stretch: normal;
+  margin-right: 8px;
+  margin-bottom: 0;
+  text-decoration: none;
+}
+.account-edit-iconlarge {
+  width: 32px;
+  height: 32px;
+  display: flex;
+  position: relative;
+  align-items: flex-start;
+  flex-shrink: 0;
+  border-color: transparent;
+}
+.account-edit-icon {
+  top: 0px;
+  left: 0px;
+  width: 32px;
+  height: 32px;
+  position: absolute;
+}
+.account-edit-component18 {
+  top: 373px;
+  left: 914px;
+  width: 839px;
+  height: 450px;
+  display: flex;
+  position: absolute;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25) ;
+  align-items: flex-start;
+  flex-shrink: 0;
+  border-color: transparent;
+}
+.account-edit-rectangle100 {
+  top: 0px;
+  left: 0px;
+  width: 839px;
+  height: 450px;
+  position: absolute;
+  border-color: rgba(45, 34, 121, 1);
+  border-style: solid;
+  border-width: 3px;
+  border-radius: 20px;
+}
+.account-edit-rectangle101 {
+  top: 0px;
+  left: 0px;
+  width: 839px;
+  height: 75px;
+  position: absolute;
+  border-color: transparent;
+  border-radius: 20px 20px 0 0;
+}
+.account-edit-rectangle105 {
+  top: 300px;
+  left: 4px;
+  width: 831px;
+  height: 75px;
+  position: absolute;
+  border-color: transparent;
+}
+.account-edit-rectangle107 {
+  top: 150px;
+  left: 4px;
+  width: 831px;
+  height: 75px;
+  position: absolute;
+  border-color: transparent;
+}
+.account-edit-line2 {
+  top: 450px;
+  left: 420px;
+  width: 450px;
+  height: 0px;
+  position: absolute;
+}
+.account-edit-line3 {
+  top: 75px;
+  left: 420px;
+  width: 75px;
+  height: 0px;
+  position: absolute;
+}
+.account-edit-text10 {
+  top: 16px;
+  left: 34px;
+  color: rgba(255, 255, 255, 1);
+  width: 342px;
+  height: auto;
+  position: absolute;
+  font-size: 36px;
+  align-self: auto;
+  font-style: Bold;
+  text-align: center;
+  font-family: Inter;
+  font-weight: 700;
+  line-height: 32px;
+  font-stretch: normal;
+  margin-right: 0;
+  margin-bottom: 0;
+  text-decoration: none;
+}
+.account-edit-text12 {
+  top: 16px;
+  left: 479px;
+  color: rgba(255, 255, 255, 1);
+  width: 342px;
+  height: auto;
+  position: absolute;
+  font-size: 36px;
+  align-self: auto;
+  font-style: Bold;
+  text-align: center;
+  font-family: Inter;
+  font-weight: 700;
+  line-height: 32px;
+  font-stretch: normal;
+  margin-right: 0;
+  margin-bottom: 0;
+  text-decoration: none;
+}
+.account-edit-rectangle108 {
+  top: 373px;
+  left: 220px;
+  width: 411px;
+  height: 591px;
+  position: absolute;
+  border-color: rgba(63, 47, 169, 1);
+  border-style: solid;
+  border-width: 4px;
+  border-radius: 20px;
+}
+.account-edit-framebasic-outlinesmall-base {
+  top: 617px;
+  left: 348px;
+  width: 155px;
+  display: flex;
+  padding: 8px 16px;
+  position: absolute;
+  align-items: flex-start;
+  border-color: rgba(45, 34, 121, 1);
+  border-style: solid;
+  border-width: 2px;
+  border-radius: 8px;
+  flex-direction: column;
+}
+.account-edit-content2 {
+  display: flex;
+  overflow: hidden;
+  position: relative;
+  align-self: stretch;
+  align-items: flex-start;
+  border-color: transparent;
+}
+.account-edit-text14 {
+  color: rgba(45, 34, 121, 1);
+  height: auto;
+  font-size: 14px;
+  align-self: auto;
+  font-style: Bold;
+  text-align: left;
+  font-family: Inter;
+  font-weight: 700;
+  line-height: 16px;
+  font-stretch: normal;
+  margin-right: 8px;
+  margin-bottom: 0;
+  text-decoration: none;
+}
+.account-edit-iconsmall {
+  width: 16px;
+  height: 16px;
+  display: flex;
+  position: relative;
+  align-items: flex-start;
+  flex-shrink: 0;
+  border-color: transparent;
+}
+.account-edit-icon1 {
+  top: 0px;
+  left: 0px;
+  width: 16px;
+  height: 16px;
+  position: absolute;
+}
+.account-edit-rectangle6 {
+  top: 723px;
+  left: 236px;
+  width: 374px;
+  height: 46px;
+  position: absolute;
+  border-color: transparent;
+  border-radius: 20px;
+}
+.account-edit-rectangle109 {
+  top: 872px;
+  left: 236px;
+  width: 374px;
+  height: 46px;
+  position: absolute;
+  border-color: transparent;
+  border-radius: 20px;
+}
+.account-edit-ssc1e38723a15f3f8659e5a14b2194cdf1692f2cb51 {
+  top: 412px;
+  left: 330px;
+  width: 190px;
+  height: 190px;
+  position: absolute;
+  border-color: rgba(45, 34, 121, 1);
+  border-style: solid;
+  border-width: 15px;
+  border-radius: 100px;
+}
+.account-edit-text16 {
+  top: 698px;
+  left: 153px;
+  color: rgba(45, 34, 121, 1);
+  width: 288px;
+  height: auto;
+  position: absolute;
+  font-size: 24px;
+  align-self: auto;
+  font-style: Bold;
+  text-align: center;
+  font-family: Inter;
+  font-weight: 700;
+  line-height: 32px;
+  font-stretch: normal;
+  margin-right: 0;
+  margin-bottom: 0;
+  text-decoration: none;
+}
+.account-edit-text18 {
+  top: 847px;
+  left: 236px;
+  color: rgba(45, 34, 121, 1);
+  width: 288px;
+  height: auto;
+  position: absolute;
+  font-size: 24px;
+  align-self: auto;
+  font-style: Bold;
+  text-align: left;
+  font-family: Inter;
+  font-weight: 700;
+  line-height: 32px;
+  font-stretch: normal;
+  margin-right: 0;
+  margin-bottom: 0;
+  text-decoration: none;
+}

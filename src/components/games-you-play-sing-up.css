@@ -1,0 +1,413 @@
+.games-you-play-sing-up-container {
+  width: 100%;
+  height: 400px;
+  display: flex;
+  position: relative;
+  align-items: flex-start;
+  flex-direction: column;
+}
+.games-you-play-sing-up-gameuplay {
+  width: 100%;
+  height: 372px;
+  display: flex;
+  position: relative;
+  align-items: flex-start;
+  flex-shrink: 0;
+  border-color: transparent;
+}
+.games-you-play-sing-up-rectangle12 {
+  top: 0px;
+  left: 0px;
+  width: 583px;
+  height: 72px;
+  position: absolute;
+  border-color: transparent;
+  border-radius: 20px 20px 0 0;
+}
+.games-you-play-sing-up-rectangle14 {
+  top: 72px;
+  left: 0px;
+  width: 583px;
+  height: 72px;
+  position: absolute;
+  border-color: transparent;
+}
+.games-you-play-sing-up-rectangle16 {
+  top: 216px;
+  left: 0px;
+  width: 583px;
+  height: 72px;
+  position: absolute;
+  border-color: transparent;
+}
+.games-you-play-sing-up-rectangle17 {
+  top: 216px;
+  left: 0px;
+  width: 583px;
+  height: 72px;
+  position: absolute;
+  border-color: transparent;
+}
+.games-you-play-sing-up-rectangle15 {
+  top: 144px;
+  left: 0px;
+  width: 583px;
+  height: 72px;
+  position: absolute;
+  border-color: transparent;
+}
+.games-you-play-sing-up-rectangle18 {
+  top: 288px;
+  left: 0px;
+  width: 583px;
+  height: 72px;
+  position: absolute;
+  border-color: transparent;
+}
+.games-you-play-sing-up-rectangle19 {
+  top: 360px;
+  left: 0px;
+  width: 583px;
+  height: 72px;
+  position: absolute;
+  border-color: transparent;
+}
+.games-you-play-sing-up-rectangle171 {
+  top: 432px;
+  left: 0px;
+  width: 583px;
+  height: 72px;
+  position: absolute;
+  border-color: transparent;
+  border-radius: 0 0 20px 20px;
+}
+.games-you-play-sing-up-checkboxset {
+  top: 93px;
+  left: 22px;
+  width: 27px;
+  height: 27px;
+  display: flex;
+  position: absolute;
+  box-shadow: 0px 2px 2px 0px rgba(244, 244, 244, 1) ;
+  align-items: flex-start;
+  flex-shrink: 0;
+  border-color: rgba(217, 217, 217, 1);
+  border-style: solid;
+  border-width: 1px;
+  border-radius: 5px;
+  background-color: rgba(255, 255, 255, 1);
+}
+.games-you-play-sing-up-checkboxset1 {
+  top: 165px;
+  left: 22px;
+  width: 27px;
+  height: 27px;
+  display: flex;
+  position: absolute;
+  box-shadow: 0px 2px 2px 0px rgba(244, 244, 244, 1) ;
+  align-items: flex-start;
+  flex-shrink: 0;
+  border-color: rgba(217, 217, 217, 1);
+  border-style: solid;
+  border-width: 1px;
+  border-radius: 5px;
+  background-color: rgba(255, 255, 255, 1);
+}
+.games-you-play-sing-up-checkboxset2 {
+  top: 93px;
+  left: 22px;
+  width: 27px;
+  height: 27px;
+  display: flex;
+  position: absolute;
+  box-shadow: 0px 2px 2px 0px rgba(244, 244, 244, 1) ;
+  align-items: flex-start;
+  flex-shrink: 0;
+  border-color: rgba(217, 217, 217, 1);
+  border-style: solid;
+  border-width: 1px;
+  border-radius: 5px;
+  background-color: rgba(255, 255, 255, 1);
+}
+.games-you-play-sing-up-checkboxset3 {
+  top: 238px;
+  left: 22px;
+  width: 27px;
+  height: 27px;
+  display: flex;
+  position: absolute;
+  box-shadow: 0px 2px 2px 0px rgba(244, 244, 244, 1) ;
+  align-items: flex-start;
+  flex-shrink: 0;
+  border-color: rgba(217, 217, 217, 1);
+  border-style: solid;
+  border-width: 1px;
+  border-radius: 5px;
+  background-color: rgba(255, 255, 255, 1);
+}
+.games-you-play-sing-up-checkboxset4 {
+  top: 93px;
+  left: 22px;
+  width: 27px;
+  height: 27px;
+  display: flex;
+  position: absolute;
+  box-shadow: 0px 2px 2px 0px rgba(244, 244, 244, 1) ;
+  align-items: flex-start;
+  flex-shrink: 0;
+  border-color: rgba(217, 217, 217, 1);
+  border-style: solid;
+  border-width: 1px;
+  border-radius: 5px;
+  background-color: rgba(255, 255, 255, 1);
+}
+.games-you-play-sing-up-checkboxset5 {
+  top: 309px;
+  left: 22px;
+  width: 27px;
+  height: 27px;
+  display: flex;
+  position: absolute;
+  box-shadow: 0px 2px 2px 0px rgba(244, 244, 244, 1) ;
+  align-items: flex-start;
+  flex-shrink: 0;
+  border-color: rgba(217, 217, 217, 1);
+  border-style: solid;
+  border-width: 1px;
+  border-radius: 5px;
+  background-color: rgba(255, 255, 255, 1);
+}
+.games-you-play-sing-up-checkboxset6 {
+  top: 309px;
+  left: 22px;
+  width: 27px;
+  height: 27px;
+  display: flex;
+  position: absolute;
+  box-shadow: 0px 2px 2px 0px rgba(244, 244, 244, 1) ;
+  align-items: flex-start;
+  flex-shrink: 0;
+  border-color: rgba(217, 217, 217, 1);
+  border-style: solid;
+  border-width: 1px;
+  border-radius: 5px;
+  background-color: rgba(255, 255, 255, 1);
+}
+.games-you-play-sing-up-checkboxset7 {
+  top: 455px;
+  left: 22px;
+  width: 27px;
+  height: 27px;
+  display: flex;
+  position: absolute;
+  box-shadow: 0px 2px 2px 0px rgba(244, 244, 244, 1) ;
+  align-items: flex-start;
+  flex-shrink: 0;
+  border-color: rgba(217, 217, 217, 1);
+  border-style: solid;
+  border-width: 1px;
+  border-radius: 5px;
+  background-color: rgba(255, 255, 255, 1);
+}
+.games-you-play-sing-up-checkboxset8 {
+  top: 382px;
+  left: 22px;
+  width: 27px;
+  height: 27px;
+  display: flex;
+  position: absolute;
+  box-shadow: 0px 2px 2px 0px rgba(244, 244, 244, 1) ;
+  align-items: flex-start;
+  flex-shrink: 0;
+  border-color: rgba(217, 217, 217, 1);
+  border-style: solid;
+  border-width: 1px;
+  border-radius: 5px;
+  background-color: rgba(255, 255, 255, 1);
+}
+.games-you-play-sing-up-frameiconchevronbottom {
+  top: 27px;
+  left: 497px;
+  width: 63px;
+  height: 16px;
+  display: flex;
+  padding: 0;
+  position: absolute;
+  align-self: auto;
+  box-sizing: border-box;
+  align-items: flex-start;
+  flex-shrink: 1;
+  border-color: transparent;
+  border-style: none;
+  border-width: 0;
+  margin-right: 0;
+  border-radius: 0px 0px 0px 0px;
+  margin-bottom: 0;
+  flex-direction: row;
+  justify-content: flex-start;
+  background-color: transparent;
+}
+.games-you-play-sing-up-vector {
+  top: 0px;
+  left: 0px;
+  width: 63px;
+  height: 16px;
+  position: absolute;
+}
+.games-you-play-sing-up-text {
+  top: 383px;
+  left: 72px;
+  color: rgba(45, 34, 121, 1);
+  width: 281px;
+  height: auto;
+  position: absolute;
+  font-size: 36px;
+  align-self: auto;
+  font-style: Regular;
+  text-align: left;
+  font-family: Istok Web;
+  font-weight: 400;
+  line-height: 32px;
+  font-stretch: normal;
+  margin-right: 0;
+  margin-bottom: 0;
+  text-decoration: none;
+}
+.games-you-play-sing-up-text02 {
+  top: 310px;
+  left: 72px;
+  color: rgba(45, 34, 121, 1);
+  width: 281px;
+  height: auto;
+  position: absolute;
+  font-size: 36px;
+  align-self: auto;
+  font-style: Regular;
+  text-align: left;
+  font-family: Istok Web;
+  font-weight: 400;
+  line-height: 32px;
+  font-stretch: normal;
+  margin-right: 0;
+  margin-bottom: 0;
+  text-decoration: none;
+}
+.games-you-play-sing-up-text04 {
+  top: 310px;
+  left: 72px;
+  color: rgba(45, 34, 121, 1);
+  width: 281px;
+  height: auto;
+  position: absolute;
+  font-size: 36px;
+  align-self: auto;
+  font-style: Regular;
+  text-align: left;
+  font-family: Istok Web;
+  font-weight: 400;
+  line-height: 32px;
+  font-stretch: normal;
+  margin-right: 0;
+  margin-bottom: 0;
+  text-decoration: none;
+}
+.games-you-play-sing-up-text06 {
+  top: 166px;
+  left: 72px;
+  color: rgba(45, 34, 121, 1);
+  width: 281px;
+  height: auto;
+  position: absolute;
+  font-size: 36px;
+  align-self: auto;
+  font-style: Regular;
+  text-align: left;
+  font-family: Istok Web;
+  font-weight: 400;
+  line-height: 32px;
+  font-stretch: normal;
+  margin-right: 0;
+  margin-bottom: 0;
+  text-decoration: none;
+}
+.games-you-play-sing-up-text08 {
+  top: 456px;
+  left: 72px;
+  color: rgba(45, 34, 121, 1);
+  width: 460px;
+  height: auto;
+  position: absolute;
+  font-size: 36px;
+  align-self: auto;
+  font-style: Regular;
+  text-align: left;
+  font-family: Istok Web;
+  font-weight: 400;
+  line-height: 32px;
+  font-stretch: normal;
+  margin-right: 0;
+  margin-bottom: 0;
+  text-decoration: none;
+}
+.games-you-play-sing-up-text10 {
+  top: 94px;
+  left: 72px;
+  color: rgba(45, 34, 121, 1);
+  width: 281px;
+  height: auto;
+  position: absolute;
+  font-size: 36px;
+  align-self: auto;
+  font-style: Regular;
+  text-align: left;
+  font-family: Istok Web;
+  font-weight: 400;
+  line-height: 32px;
+  font-stretch: normal;
+  margin-right: 0;
+  margin-bottom: 0;
+  text-decoration: none;
+}
+.games-you-play-sing-up-text12 {
+  top: 238px;
+  left: 72px;
+  color: rgba(45, 34, 121, 1);
+  width: 281px;
+  height: auto;
+  position: absolute;
+  font-size: 36px;
+  align-self: auto;
+  font-style: Regular;
+  text-align: left;
+  font-family: Istok Web;
+  font-weight: 400;
+  line-height: 32px;
+  font-stretch: normal;
+  margin-right: 0;
+  margin-bottom: 0;
+  text-decoration: none;
+}
+.games-you-play-sing-up-scrollbar-frame {
+  top: 72px;
+  left: 572px;
+  width: 11px;
+  height: 372px;
+  display: flex;
+  overflow: hidden;
+  position: absolute;
+  align-items: flex-start;
+  flex-shrink: 0;
+  border-color: transparent;
+}
+.games-you-play-sing-up-scrollbar {
+  top: 2px;
+  left: 2px;
+  width: 7px;
+  height: 264px;
+  position: absolute;
+  box-sizing: content-box;
+  border-color: rgba(255, 255, 255, 0.14749999344348907);
+  border-style: solid;
+  border-width: 1px;
+  border-radius: 3.5px;
+}

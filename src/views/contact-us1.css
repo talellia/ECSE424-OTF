@@ -1,0 +1,324 @@
+.contact-us1-container {
+  width: 100%;
+  display: flex;
+  overflow: auto;
+  min-height: 100vh;
+  align-items: center;
+  flex-direction: column;
+}
+.contact-us1-contactus1 {
+  width: 100%;
+  height: 1080px;
+  display: flex;
+  overflow: hidden;
+  position: relative;
+  align-items: flex-start;
+  flex-shrink: 0;
+  border-color: transparent;
+  background-color: rgba(255, 255, 255, 1);
+}
+.contact-us1-back-ground {
+  top: -12px;
+  left: -146px;
+  width: 2211px;
+  height: 1104px;
+  display: flex;
+  position: absolute;
+  align-items: flex-start;
+  flex-shrink: 0;
+  border-color: transparent;
+}
+.contact-us1-i-m-a-g-e5403411 {
+  top: 0px;
+  left: 0px;
+  width: 2211px;
+  height: 1104px;
+  position: absolute;
+  border-color: transparent;
+}
+.contact-us1-rectangle13 {
+  top: 177px;
+  left: 146px;
+  width: 1920px;
+  height: 903px;
+  position: absolute;
+  border-color: transparent;
+}
+.contact-us1-frameiconmenu {
+  top: 60px;
+  left: 204px;
+  width: 0px;
+  height: 0px;
+  display: flex;
+  padding: 0;
+  position: absolute;
+  align-self: auto;
+  box-sizing: border-box;
+  align-items: flex-start;
+  flex-shrink: 1;
+  border-color: transparent;
+  border-style: none;
+  border-width: 0;
+  margin-right: 0;
+  border-radius: 0px 0px 0px 0px;
+  margin-bottom: 0;
+  flex-direction: row;
+  justify-content: flex-start;
+  background-color: transparent;
+}
+.contact-us1-text {
+  top: 196px;
+  left: 327px;
+  color: rgba(45, 34, 121, 1);
+  width: 275px;
+  height: auto;
+  position: absolute;
+  font-size: 40px;
+  align-self: auto;
+  font-style: Bold;
+  text-align: center;
+  font-family: Inter;
+  font-weight: 700;
+  line-height: 32px;
+  font-stretch: normal;
+  margin-right: 0;
+  margin-bottom: 0;
+  text-decoration: none;
+}
+.contact-us1-text02 {
+  top: 80px;
+  left: 1250px;
+  color: rgb(45, 34, 121);
+  width: 809px;
+  height: auto;
+  position: absolute;
+  font-size: 200px;
+  align-self: auto;
+  font-style: Regular;
+  text-align: left;
+  font-family: Russo One;
+  font-weight: 400;
+  line-height: 32px;
+  font-stretch: normal;
+  margin-right: 0;
+  margin-bottom: 0;
+  text-decoration: none;
+}
+.contact-us1-text03 {
+  color: #2d2279;
+  font-size: 200px;
+}
+.contact-us1-text04 {
+  color: #d9d9d9;
+  font-size: 50px;
+}
+.contact-us1-text05 {
+  color: #2d2279;
+  font-size: 200px;
+}
+.contact-us1-text06 {
+  color: #d9d9d9;
+  font-size: 50px;
+}
+.contact-us1-text07 {
+  color: #2d2279;
+  font-size: 200px;
+}
+.contact-us1-text08 {
+  color: #d9d9d9;
+  font-size: 50px;
+}
+.contact-us1-rectangle99 {
+  top: 294px;
+  left: 125px;
+  width: 1711px;
+  height: 717px;
+  position: absolute;
+  border-color: transparent;
+  border-radius: 20px;
+}
+.contact-us1-basic-outline-button {
+  top: 900px;
+  left: 764px;
+  width: 206px;
+  display: flex;
+  position: absolute;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25) ;
+  align-items: flex-start;
+  border-color: transparent;
+  flex-direction: column;
+}
+.contact-us1-component19 {
+  top: 294px;
+  left: 125px;
+  width: 1711px;
+  height: 717px;
+  display: flex;
+  position: absolute;
+  align-items: flex-start;
+  flex-shrink: 0;
+  border-color: transparent;
+}
+.contact-us1-rectangle100 {
+  top: 0px;
+  left: 0px;
+  width: 1711px;
+  height: 717px;
+  position: absolute;
+  border-color: transparent;
+  border-radius: 20px;
+}
+.contact-us1-basic-outline-button1 {
+  top: 598px;
+  left: 781px;
+  width: 165px;
+  display: flex;
+  position: absolute;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25) ;
+  align-items: flex-start;
+  border-color: transparent;
+  flex-direction: column;
+}
+.contact-us1-framebasic-outlinelarge-base {
+  display: flex;
+  padding: 16px 32px;
+  position: relative;
+  align-self: stretch;
+  align-items: flex-start;
+  border-color: rgba(45, 34, 121, 1);
+  border-style: solid;
+  border-width: 2px;
+  border-radius: 8px;
+  flex-direction: column;
+  background-color: rgba(45, 34, 121, 1);
+}
+.contact-us1-content {
+  display: flex;
+  overflow: hidden;
+  position: relative;
+  align-self: stretch;
+  align-items: flex-start;
+  border-color: transparent;
+}
+.contact-us1-text09 {
+  color: rgba(217, 217, 217, 1);
+  height: auto;
+  font-size: 24px;
+  align-self: auto;
+  font-style: Bold;
+  text-align: left;
+  font-family: Inter;
+  font-weight: 700;
+  line-height: 32px;
+  font-stretch: normal;
+  margin-right: 8px;
+  margin-bottom: 0;
+  text-decoration: none;
+}
+.contact-us1-iconlarge {
+  width: 32px;
+  height: 32px;
+  display: flex;
+  position: relative;
+  align-items: flex-start;
+  flex-shrink: 0;
+  border-color: transparent;
+}
+.contact-us1-icon {
+  top: 0px;
+  left: 0px;
+  width: 32px;
+  height: 32px;
+  position: absolute;
+}
+.contact-us1-rectangle6 {
+  top: 192px;
+  left: 78px;
+  width: 700px;
+  height: 72px;
+  position: absolute;
+  border-color: transparent;
+  border-radius: 20px;
+}
+.contact-us1-text11 {
+  top: 160px;
+  left: 89px;
+  color: rgba(45, 34, 121, 1);
+  width: 281px;
+  height: auto;
+  position: absolute;
+  font-size: 48px;
+  align-self: auto;
+  font-style: Regular;
+  text-align: left;
+  font-family: Istok Web;
+  font-weight: 400;
+  line-height: 32px;
+  font-stretch: normal;
+  margin-right: 0;
+  margin-bottom: 0;
+  text-decoration: none;
+}
+.contact-us1-rectangle102 {
+  top: 346px;
+  left: 78px;
+  width: 700px;
+  height: 72px;
+  position: absolute;
+  border-color: transparent;
+  border-radius: 20px;
+}
+.contact-us1-text13 {
+  top: 314px;
+  left: 89px;
+  color: rgba(45, 34, 121, 1);
+  width: 281px;
+  height: auto;
+  position: absolute;
+  font-size: 48px;
+  align-self: auto;
+  font-style: Regular;
+  text-align: left;
+  font-family: Istok Web;
+  font-weight: 400;
+  line-height: 32px;
+  font-stretch: normal;
+  margin-right: 0;
+  margin-bottom: 0;
+  text-decoration: none;
+}
+.contact-us1-rectangle101 {
+  top: 112px;
+  left: 899px;
+  width: 698px;
+  height: 404px;
+  position: absolute;
+  border-color: transparent;
+  border-radius: 20px;
+}
+.contact-us1-text15 {
+  top: 80px;
+  left: 910px;
+  color: rgba(45, 34, 121, 1);
+  width: 281px;
+  height: auto;
+  position: absolute;
+  font-size: 48px;
+  align-self: auto;
+  font-style: Regular;
+  text-align: left;
+  font-family: Istok Web;
+  font-weight: 400;
+  line-height: 32px;
+  font-stretch: normal;
+  margin-right: 0;
+  margin-bottom: 0;
+  text-decoration: none;
+}
+.contact-us1-vector1 {
+  top: 368.5px;
+  left: 703px;
+  width: 48px;
+  height: 37px;
+  position: absolute;
+}
