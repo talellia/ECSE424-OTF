@@ -1,6 +1,8 @@
 import React from 'react'
 
 import { Helmet } from 'react-helmet'
+import Menue from '../components/menue';
+
 
 import './account.css'
 
@@ -12,34 +14,36 @@ const Account = (props) => {
         <meta property="og:title" content="Account - exported project" />
       </Helmet>
       <div className="account-account">
-        <div className="account-back-ground">
+        <Menue rootClassName={"menue-home-page"}></Menue>
+        <div className="home-back-ground">
           <img
-            alt="IMAGE5403411I301"
-            src="https://aheioqhobo.cloudimg.io/v7/_playground-bucket-v2.teleporthq.io_/3970f017-b141-4456-afd4-fb36d956eb37/49fc7e92-070a-410b-af70-fae69e9bbe8c?org_if_sml=13606374"
-            className="account-i-m-a-g-e5403411"
+            alt="IMAGE5403411I111"
+            src="https://aheioqhobo.cloudimg.io/v7/_playground-bucket-v2.teleporthq.io_/3970f017-b141-4456-afd4-fb36d956eb37/0fd2c00f-c6f3-4997-950d-9075e67bf09d?org_if_sml=13606374"
+            className="home-i-m-a-g-e5403411"
           />
-          <span className="account-text">
-            <span className="account-text01">O</span>
-            <span className="account-text02">games</span>
-            <span className="account-text03">T</span>
-            <span className="account-text04">eam</span>
-            <span className="account-text05">F</span>
-            <span className="account-text06">inder</span>
+          <span className="home-text">
+            <span className="home-text01">O</span>
+            <span className="home-text02">games</span>
+            <span className="home-text03">T</span>
+            <span className="home-text04">eam</span>
+            <span className="home-text05">F</span>
+            <span className="home-text06">inder</span>
           </span>
           <img
-            alt="Rectangle13I301"
-            src="https://aheioqhobo.cloudimg.io/v7/_playground-bucket-v2.teleporthq.io_/3970f017-b141-4456-afd4-fb36d956eb37/36ef49ea-4b10-4eff-87a9-b365561f3af4?org_if_sml=18841"
-            className="account-rectangle13"
+            alt="Rectangle13I111"
+            src="https://aheioqhobo.cloudimg.io/v7/_playground-bucket-v2.teleporthq.io_/3970f017-b141-4456-afd4-fb36d956eb37/42d5471f-603b-4450-9aa3-d5a56e0b2e06?org_if_sml=18841"
+            className="home-rectangle13"
           />
-          <div className="account-frameiconmenu">
+          <button id="menueIcon" onClick={openMenue} className="home-frameiconmenu">
             <img
-              alt="VectorI301"
-              src="/playground_assets/vectori301-8oil.svg"
-              className="account-vector"
+              type="menu-fold"
+              alt="VectorI111"
+              src="/playground_assets/vectori111-ikra.svg"
+              className="home-vector"
             />
-          </div>
-          <span className="account-text07">
-            <span>Account</span>
+          </button>
+          <span className="home-text07">
+            <span>Message</span>
           </span>
         </div>
         <img
@@ -120,6 +124,16 @@ const Account = (props) => {
       </div>
     </div>
   )
+}
+function   openMenue() {
+  if (document.getElementById("menu").style.visibility === "visible"){
+    document.getElementById("menu").style.visibility = "hidden"
+    document.getElementById("menueIcon").style.left = "204px"
+  }else{
+    document.getElementById("menu").style.visibility = "visible"
+    document.getElementById("menueIcon").style.left = "calc(204px + 353px)"
+  }
+
 }
 
 export default Account

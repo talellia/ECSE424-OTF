@@ -1,6 +1,7 @@
 import React from 'react'
 
 import { Helmet } from 'react-helmet'
+import Menue from '../components/menue';
 
 import './contact-us2.css'
 
@@ -11,35 +12,37 @@ const ContactUs2 = (props) => {
         <title>ContactUs2 - exported project</title>
         <meta property="og:title" content="ContactUs2 - exported project" />
       </Helmet>
+      <Menue rootClassName={"menue-home-page"}></Menue>
       <div className="contact-us2-contactus2">
-        <div className="contact-us2-back-ground">
+      <div className="home-back-ground">
           <img
-            src="https://aheioqhobo.cloudimg.io/v7/_playground-bucket-v2.teleporthq.io_/3970f017-b141-4456-afd4-fb36d956eb37/85978958-421e-4def-ba52-3204a8db3cfc?org_if_sml=13606374"
-            alt="IMAGE5403411I301"
-            className="contact-us2-i-m-a-g-e5403411"
+            alt="IMAGE5403411I111"
+            src="https://aheioqhobo.cloudimg.io/v7/_playground-bucket-v2.teleporthq.io_/3970f017-b141-4456-afd4-fb36d956eb37/0fd2c00f-c6f3-4997-950d-9075e67bf09d?org_if_sml=13606374"
+            className="home-i-m-a-g-e5403411"
           />
-          <img
-            src="https://aheioqhobo.cloudimg.io/v7/_playground-bucket-v2.teleporthq.io_/3970f017-b141-4456-afd4-fb36d956eb37/93546f3c-44c7-4967-bdda-f43c0e53f77e?org_if_sml=18841"
-            alt="Rectangle13I301"
-            className="contact-us2-rectangle13"
-          />
-          <div className="contact-us2-frameiconmenu">
-            <img
-              src="/playground_assets/vectori301-se78.svg"
-              alt="VectorI301"
-              className="contact-us2-vector"
-            />
-          </div>
-          <span className="contact-us2-text">
-            <span>Contact us</span>
+          <span className="home-text">
+            <span className="home-text01">O</span>
+            <span className="home-text02">games</span>
+            <span className="home-text03">T</span>
+            <span className="home-text04">eam</span>
+            <span className="home-text05">F</span>
+            <span className="home-text06">inder</span>
           </span>
-          <span className="contact-us2-text02">
-            <span className="contact-us2-text03">O</span>
-            <span className="contact-us2-text04">games</span>
-            <span className="contact-us2-text05">T</span>
-            <span className="contact-us2-text06">eam</span>
-            <span className="contact-us2-text07">F</span>
-            <span className="contact-us2-text08">inder</span>
+          <img
+            alt="Rectangle13I111"
+            src="https://aheioqhobo.cloudimg.io/v7/_playground-bucket-v2.teleporthq.io_/3970f017-b141-4456-afd4-fb36d956eb37/42d5471f-603b-4450-9aa3-d5a56e0b2e06?org_if_sml=18841"
+            className="home-rectangle13"
+          />
+          <button id="menueIcon" onClick={openMenue} className="home-frameiconmenu">
+            <img
+              type="menu-fold"
+              alt="VectorI111"
+              src="/playground_assets/vectori111-ikra.svg"
+              className="home-vector"
+            />
+          </button>
+          <span className="home-text07">
+            <span>Message</span>
           </span>
         </div>
         <img
@@ -95,6 +98,17 @@ const ContactUs2 = (props) => {
       </div>
     </div>
   )
+}
+
+function   openMenue() {
+  if (document.getElementById("menu").style.visibility === "visible"){
+    document.getElementById("menu").style.visibility = "hidden"
+    document.getElementById("menueIcon").style.left = "204px"
+  }else{
+    document.getElementById("menu").style.visibility = "visible"
+    document.getElementById("menueIcon").style.left = "calc(204px + 353px)"
+  }
+
 }
 
 export default ContactUs2

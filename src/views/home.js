@@ -95,7 +95,7 @@ const Home = (props) => {
             </div>
           </div>
         </button>
-        <button onClick={openfilter} className="home-filter-button1">
+        <button id="filterbutton" onClick={openfilter} onMouseDown={click3} onMouseUp={click4} className="home-filter-button1">
           <div className="home-framemodernlarge-base">
             <div className="home-content1">
               <span className="home-text11"></span>
@@ -224,6 +224,15 @@ function click(){
 function click2(){
   document.getElementById("clearFilter").style.backgroundColor = "rgba(45, 34, 121, 1)";
   document.getElementById("clearfilter").style.color = "rgba(217, 217, 217, 1)";
+
+}
+function click3(){
+  document.getElementById("filterbutton").style.backgroundColor = "rgba(217, 217, 217, 1)";
+
+}
+function click4(){
+  document.getElementById("filterbutton").style.backgroundColor = "rgba(45, 34, 121, 1)";
+  document.getElementById("filterbutton").style.color = "rgba(217, 217, 217, 1)";
 
 }
 

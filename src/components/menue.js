@@ -8,20 +8,27 @@ const Menue = (props) => {
 
   const history = useHistory();
 
+  const message = () => {
+    history.push("/message")
+  }
+  const post = () => {
+    history.push("/post")
+  }
+
   const contactUs = () => {
-    history.push("/contact-us1")
+    history.push("/contact-us2")
   }
 
   const accountEdit = () => {
-    history.push("/account-edit")
+    history.push("/account")
   }
 
   const signOut = () => {
     history.push("/")
   }
   //temporary for only home page, only one having menu now
-  function refreshPage() {
-    window.location.reload(false);
+  function home() {
+    history.push("/home")
   }
   return (
     <div id="menu" className={`menue-container ${props.rootClassName} `}>
@@ -31,7 +38,7 @@ const Menue = (props) => {
           src="/playground_assets/rectangle121788-qebj-400w.png"
           className="menue-rectangle12"
         />
-        <button className="menue-main-button" onClick={refreshPage}>
+        <button className="menue-main-button" onClick={home}>
           <img
             alt="Rectangle20I178"
             src="/playground_assets/rectangle20i178-qde-200h.png"
@@ -48,7 +55,7 @@ const Menue = (props) => {
             <span>Main</span>
           </span>
         </button>
-        <button className="menue-post-button">
+        <button className="menue-post-button" onClick={post}>
           <img
             alt="Rectangle17I178"
             src="/playground_assets/rectangle17i178-dd6-200h.png"
@@ -65,19 +72,13 @@ const Menue = (props) => {
             />
           </div>
         </button>
-        <button className="menue-message-button">
+        <button className="menue-message-button" onClick={message}>
           <img
             alt="Rectangle19I178"
             src="/playground_assets/rectangle19i178-ptk-200h.png"
             className="menue-rectangle19"
           />
           <span className="menue-text04">
-            <span>Message</span>
-          </span>
-          <span className="menue-text06">
-            <span>Message</span>
-          </span>
-          <span className="menue-text08">
             <span>Message</span>
           </span>
           <div className="menue-frameiconmessage">
@@ -139,7 +140,7 @@ const Menue = (props) => {
           src="/playground_assets/line11789-e10g.svg"
           className="menue-line1"
         />
-        <div className="menue-account" onClick={accountEdit}>
+        <button id="accountmenu" className="menue-account" onClick={accountEdit}>
           <span className="menue-text19">
             <span>SamSam5</span>
           </span>
@@ -153,11 +154,12 @@ const Menue = (props) => {
             src="/playground_assets/ssc1e38723a15f3f8659e5a14b2194cdf1692f2cb51i178-bjeh-200h.png"
             className="menue-ssc1e38723a15f3f8659e5a14b2194cdf1692f2cb51"
           />
-        </div>
+        </button>
       </div>
     </div>
   )
 }
+
 
 Menue.defaultProps = {
   rootClassName: '',

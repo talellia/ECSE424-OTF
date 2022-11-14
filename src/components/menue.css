@@ -34,6 +34,9 @@
   flex-shrink: 0;
   border-color: transparent;
 }
+.menue-main-button:hover .menue-text{
+  font-size: 27px;
+}
 .menue-rectangle20 {
   top: 0px;
   left: 0px;
@@ -102,6 +105,9 @@
   flex-shrink: 0;
   border-color: transparent;
 }
+.menue-post-button:hover .menue-text02{
+  font-size: 27px;
+}
 .menue-rectangle17 {
   top: 0px;
   left: 0px;
@@ -169,6 +175,9 @@
   align-items: flex-start;
   flex-shrink: 0;
   border-color: transparent;
+}
+.menue-message-button:hover .menue-text04{
+  font-size: 27px;
 }
 .menue-rectangle19 {
   top: 0px;
@@ -443,6 +452,7 @@
   flex-shrink: 0;
   border-color: transparent;
 }
+
 .menue-text19 {
   top: 226.11683654785156px;
   left: 55.807559967041016px;
@@ -489,4 +499,17 @@
   left: 0px;
   z-index: 2;
   visibility: hidden;
+}
+.menue-contact-us-button:hover .menue-text10{
+  font-size: 27px;
+}
+
+.menue-sign-out-button:hover .menue-text12{
+  font-size: 27px;
+}
+.menue-account:hover{
+  background-color: rgba(217, 217, 217, 0.521);
+}
+.menue-account:hover .menue-text19{
+  font-size: 27px;  
 }
