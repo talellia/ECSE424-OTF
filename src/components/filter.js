@@ -1,10 +1,14 @@
-import React from 'react'
-import PropTypes from 'prop-types'
+import PropTypes from 'prop-types';
+import React from 'react';
 
-import './filter.css'
+import './filter.css';
+var valLF = [];
+var valPlayStyle = [];
+var valorantRank = [];
 
 const Filter = (props) => {
-  var valorantRank = [];
+  const valLFId = ["filter-val-LF-Team", "filter-val-LF-Duo", "filter-val-LF-Boost", "filter-val-LF-Derak", "filter-val-LF-Rank", "filter-val-LF-Casual", "filter-val-LF-TryHard", "filter-val-LF-Social"];
+  const valPlayStyleId = ["filter-val-PlayStyle-Duelist", "filter-val-PlayStyle-Sentinel", "filter-val-PlayStyle-Controler", "filter-val-PlayStyle-Initiater", "filter-val-PlayStyle-Agressive", "filter-val-PlayStyle-Passive", "filter-val-PlayStyle-Rat", "filter-val-PlayStyle-Sniper"];
 
   const handleClick = event => {
     selectValRank(event.currentTarget.id, event.currentTarget.stateclick);
@@ -16,7 +20,6 @@ const Filter = (props) => {
       var index = valorantRank.findIndex(e => e === event.currentTarget.value);
       valorantRank.splice(index, 1)
     }
-    console.log(valorantRank)
   };
 
   return (
@@ -146,7 +149,7 @@ const Filter = (props) => {
             <span>Rank</span>
           </span>
         </button>
-        <button id="filter-val-lf-button">
+        <button id="filter-val-lf-button" onClick={event => { openValorantLF(); selectValLFvalues(valLFId); }}>
           <img
             alt="Rectangle511711"
             src="/playground_assets/rectangle511711-zpx.svg"
@@ -156,7 +159,7 @@ const Filter = (props) => {
             <span>Looking for?</span>
           </span>
         </button>
-        <button id="filter-val-playStyle-button">
+        <button id="filter-val-playStyle-button" onClick={event => { openValorantPlayStyle(); selectValPlayStylevalues(valPlayStyleId); }}>
           <img
             alt="Rectangle521711"
             src="/playground_assets/rectangle521711-vfbq.svg"
@@ -174,7 +177,7 @@ const Filter = (props) => {
         <span className="filter-text20">
           <span><b>Valorant</b></span>
         </span>
-        <div className="filter-framebasic-outlinemedium-base">
+        <button type="button" onClick={submitFilter} id="filter-Done" className="filter-framebasic-outlinemedium-base">
           <div className="filter-content">
             <span className="filter-text22">
               <span>Done</span>
@@ -187,9 +190,9 @@ const Filter = (props) => {
               />
             </div>
           </div>
-        </div>
+        </button>
       </div>
-      <div className="filter-val-lookingfor">
+      <div id="filter-val-LF" className="filter-val-lookingfor">
         <img
           alt="Rectangle541712"
           src="/playground_assets/rectangle541712-qa3.svg"
@@ -200,14 +203,14 @@ const Filter = (props) => {
           src="/playground_assets/rectangle931712-8zf-900w.png"
           className="filter-rectangle93"
         />
-        <div className="filter-checkboxset"></div>
-        <div className="filter-checkboxset01"></div>
-        <div className="filter-checkboxset02"></div>
-        <div className="filter-checkboxset03"></div>
-        <div className="filter-checkboxset04"></div>
-        <div className="filter-checkboxset05"></div>
-        <div className="filter-checkboxset06"></div>
-        <div className="filter-checkboxset07"></div>
+        <input type="checkbox" value={"Team"}    id={valLFId[0]} className="filter-checkboxset" />
+        <input type="checkbox" value={"Duo"}     id={valLFId[1]} className="filter-checkboxset01" />
+        <input type="checkbox" value={"Boost"}   id={valLFId[2]} className="filter-checkboxset02" />
+        <input type="checkbox" value={"Derank"}  id={valLFId[3]} className="filter-checkboxset03" />
+        <input type="checkbox" value={"Rank"}    id={valLFId[4]} className="filter-checkboxset04" />
+        <input type="checkbox" value={"Casual"}  id={valLFId[5]} className="filter-checkboxset05" />
+        <input type="checkbox" value={"TryHard"} id={valLFId[6]} className="filter-checkboxset06" />
+        <input type="checkbox" value={"Social"}  id={valLFId[7]} className="filter-checkboxset07" />
         <span className="filter-text24">
           <span>Team</span>
         </span>
@@ -273,7 +276,6 @@ const Filter = (props) => {
           src="/playground_assets/valorantranks11711-f9me-900w.png"
           className="filter-valorantranks1"
         />
-        {/* TODO: add values to buttons */}
         <button
           onMouseDown={handleClick}
           stateclick={0}
@@ -296,7 +298,7 @@ const Filter = (props) => {
           onMouseDown={handleClick}
           stateclick="0"
           value={"im1"}
-          id="valorant-rank-immortal1"
+          id="valorant-rank-im1"
           src="/playground_assets/rectangle701711-m93-200h.png"
           className="filter-rectangle70"
         />
@@ -304,7 +306,7 @@ const Filter = (props) => {
           onMouseDown={handleClick}
           stateclick="0"
           value={"im3"}
-          id="valorant-rank-immortal3"
+          id="valorant-rank-im3"
           alt="Rectangle711711"
           src="/playground_assets/rectangle711711-g8xc-200h.png"
           className="filter-rectangle71"
@@ -499,10 +501,10 @@ const Filter = (props) => {
           className="filter-rectangle80"
         />
       </div>
-      <div className="filter-val-play-style">
+      <div id="filter-val-PlayStyle" className="filter-val-play-style">
         <img
           alt="Rectangle542394"
-          src="/playground_assets/rectangle542394-dw1o.svg"
+          src="/playground_assets/rectangle542394-3qj5.svg"
           className="filter-rectangle542"
         />
         <img
@@ -510,23 +512,14 @@ const Filter = (props) => {
           src="/playground_assets/rectangle932394-juc-900w.png"
           className="filter-rectangle931"
         />
-        <div className="filter-checkboxset08"></div>
-        <div className="filter-checkboxset09"></div>
-        <div className="filter-checkboxset10"></div>
-        <div className="filter-checkboxset11"></div>
-        <div className="filter-checkboxset12"></div>
-        <div className="filter-checkboxset13"></div>
-        <div className="filter-checkboxset14"></div>
-        <div className="filter-checkboxset15"></div>
-        <div className="filter-checkboxset16"></div>
-        <div className="filter-checkboxset17"></div>
-        <div className="filter-checkboxset18"></div>
-        <div className="filter-checkboxset19"></div>
-        <div className="filter-checkboxset20"></div>
-        <div className="filter-checkboxset21"></div>
-        <div className="filter-checkboxset22"></div>
-        <div className="filter-checkboxset23"></div>
-        <div className="filter-checkboxset24"></div>
+        <input type="checkbox" value={"Duelist"}   id={valPlayStyleId[0]} className="filter-checkboxset08"/>
+        <input type="checkbox" value={"Sentinel"}  id={valPlayStyleId[1]} className="filter-checkboxset10"/>
+        <input type="checkbox" value={"Controler"} id={valPlayStyleId[2]} className="filter-checkboxset12"/>
+        <input type="checkbox" value={"Initiator"} id={valPlayStyleId[3]} className="filter-checkboxset14"/>
+        <input type="checkbox" value={"Agressive"} id={valPlayStyleId[4]} className="filter-checkboxset16"/>
+        <input type="checkbox" value={"Passive"}   id={valPlayStyleId[5]} className="filter-checkboxset18"/>
+        <input type="checkbox" value={"Rat"}       id={valPlayStyleId[6]} className="filter-checkboxset20"/>
+        <input type="checkbox" value={"Sniper"}    id={valPlayStyleId[7]} className="filter-checkboxset22"/>
         <span className="filter-text40">
           <span>Duelist</span>
         </span>
@@ -591,6 +584,46 @@ function selectValRank(id, stateclick) {
     document.getElementById(id).style.backgroundColor = "#d9d9d950";
   }
 }
+function openValorantLF() {
+  if (document.getElementById("filter-val-LF").style.visibility === "hidden" || document.getElementById("filter-val-LF").style.visibility === "") {
+    document.getElementById("filter-val-LF").style.visibility = "visible";
+  } else {
+    document.getElementById("filter-val-LF").style.visibility = "hidden";
+  }
+}
+function selectValLFvalues(valLFId) {
+  for (var i in valLFId) {
+    if (document.getElementById(valLFId[i]).checked && !(valLF.includes(document.getElementById(valLFId[i]).value))) {
+      valLF.push(document.getElementById(valLFId[i]).value);
+    } else if (!(document.getElementById(valLFId[i]).checked) && valLF.includes(document.getElementById(valLFId[i]).value)) {
+      var index = valLF.findIndex(e => e === document.getElementById(valLFId[i]).value);
+      valLF.splice(index, 1)
+    }
+  }
+}
+function openValorantPlayStyle() {
+  if (document.getElementById("filter-val-PlayStyle").style.visibility === "hidden" || document.getElementById("filter-val-PlayStyle").style.visibility === "") {
+    document.getElementById("filter-val-PlayStyle").style.visibility = "visible";
+  } else {
+    document.getElementById("filter-val-PlayStyle").style.visibility = "hidden";
+  }
+}
+function selectValPlayStylevalues(valPlayStyleId) {
+  for (var i in valPlayStyleId) {
+    if (document.getElementById(valPlayStyleId[i]).checked && !(valPlayStyle.includes(document.getElementById(valPlayStyleId[i]).value))) {
+      valPlayStyle.push(document.getElementById(valPlayStyleId[i]).value);
+    } else if (!(document.getElementById(valPlayStyleId[i]).checked) && valPlayStyle.includes(document.getElementById(valPlayStyleId[i]).value)) {
+      var index = valPlayStyle.findIndex(e => e === document.getElementById(valPlayStyleId[i]).value);
+      valPlayStyle.splice(index, 1)
+    }
+  }
+
+}
+function submitFilter(){
+  document.getElementById("filter").style.visibility = "hidden";
+  document.getElementById("filterGameChoise").style.visibility = "hidden";
+  document.getElementById("filterVal").style.visibility = "hidden";
+}
 
 Filter.defaultProps = {
   rootClassName: '',
@@ -601,3 +634,4 @@ Filter.propTypes = {
 }
 
 export default Filter
+export {valLF,valPlayStyle,valorantRank}

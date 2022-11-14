@@ -3,9 +3,12 @@ import React from 'react'
 import { Helmet } from 'react-helmet';
 import Menue from '../components/menue';
 import Filter from '../components/filter';
-import BigAdd from '../components/big-add'
+import {valLF,valPlayStyle,valorantRank} from '../components/filter';
+
 
 import './home.css'
+
+var tempVal = {};
 
 const Home = (props) => {
 
@@ -18,7 +21,6 @@ const Home = (props) => {
 
       <div className="home-home">
           <Menue rootClassName={"menue-home-page"}></Menue>
-          <BigAdd />
         <div className="home-back-ground">
           <img
             alt="IMAGE5403411I111"
@@ -79,9 +81,9 @@ const Home = (props) => {
             />
           </div>
         </div>
-        <button type="button" className="home-framemodernmedium-base">
+        <button type="button" id="clearFilter" onMouseDown={click} onMouseUp={click2} onClick={clearFilter} className="home-framemodernmedium-base">
           <div className="home-content">
-            <span className="home-text09">
+            <span id="clearfilter"className="home-text09">
               <span>Clear</span>
             </span>
             <div className="home-iconmedium">
@@ -107,7 +109,7 @@ const Home = (props) => {
             />
           </div>
         </button>
-        <Filter rootClassName=""></Filter>
+        <Filter rootClassName="Filter"></Filter>
         <div className="home-post">
           <div className="home-add1">
             <div className="home-rectangle141">
@@ -175,11 +177,54 @@ function   openMenue() {
 function openfilter(){
   if( document.getElementById("filter").style.visibility === "visible"){
     document.getElementById("filter").style.visibility = "hidden";
-
+    document.getElementById("filterGameChoise").style.visibility = "hidden";
+    document.getElementById("filterVal").style.visibility = "hidden";
+    document.getElementById("filter-val-Rank").style.visibility = "hidden";
+    document.getElementById("filter-val-LF").style.visibility = "hidden";
+    document.getElementById("filter-val-PlayStyle").style.visibility = "hidden";
   }else{  
     document.getElementById("filter").style.visibility = "visible";
 
+    //TODO: fix valorantRank;
+    
+    for(var i in tempVal["valorantRank"]){
+      if (!(valorantRank.includes(tempVal["valorantRank"][i]))){
+        var id = "valorant-rank-"+ tempVal["valorantRank"][i];
+        document.getElementById(id).style.backgroundColor = "";
+        document.getElementById(id).stateclick = 0;
+      }
+    }
+    for(var i in tempVal["valLF"]){
+      if (!(valLF.includes(tempVal["valLF"][i]))){
+        var id = "filter-val-LF-"+ tempVal["valLF"][i];
+        document.getElementById(id).checked = false;
+      }
+    }
+    for(var i in tempVal["valPlayStyle"]){
+      if (!(valorantRank.includes(tempVal["valPlayStyle"][i]))){
+        var id = "filter-val-PlayStyle-"+ tempVal["valPlayStyle"][i];
+        document.getElementById(id).checked = false;
+      }
+    }
   }
+}
+function clearFilter(){
+  tempVal["valLF"] = valLF.slice();
+  tempVal["valPlayStyle"] = valPlayStyle.slice();
+  tempVal["valorantRank"] = valorantRank.slice();
+  valLF.splice(0,valLF.length)
+  valPlayStyle.splice(0,valPlayStyle.length)
+  valorantRank.splice(0,valorantRank.length)
+}
+function click(){
+  document.getElementById("clearFilter").style.backgroundColor = "rgba(217, 217, 217, 1)";
+  document.getElementById("clearfilter").style.color = "rgba(45, 34, 121, 1)";
+
+}
+function click2(){
+  document.getElementById("clearFilter").style.backgroundColor = "rgba(45, 34, 121, 1)";
+  document.getElementById("clearfilter").style.color = "rgba(217, 217, 217, 1)";
+
 }
 
 export default Home

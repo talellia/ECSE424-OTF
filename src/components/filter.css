@@ -433,7 +433,30 @@
   border-radius: 8px;
   flex-direction: column;
 }
+.filter-framebasic-outlinemedium-base:hover {
+  top: 349px;
+  left: 361px;
+  width: 148px;
+  height: 48px;
+  display: flex;
+  padding: 12px 24px;
+  position: absolute;
+  align-items: flex-start;
+  flex-shrink: 0;
+  border-color: rgba(45, 34, 121, 1);
+  border-style: solid;
+  border-width: 2px;
+  border-radius: 8px;
+  flex-direction: column;
+  background-color: rgba(45, 34, 121, 1);
+}
+.filter-framebasic-outlinemedium-base:hover .filter-text22{
+  left:25%;
+  position:absolute;
+  color:aliceblue;
+}
 .filter-content {
+  height: 50px;
   display: flex;
   overflow: hidden;
   position: relative;
@@ -473,6 +496,8 @@
   position: absolute;
 }
 .filter-val-lookingfor {
+  top:-740px;
+  left:21px;
   width: 854px;
   height: 362px;
   display: flex;
@@ -627,7 +652,7 @@
   background-color: rgba(255, 255, 255, 1);
 }
 .filter-text24 {
-  top: 19px;
+  top: 29px;
   left: 63px;
   color: rgba(45, 34, 121, 1);
   width: 300px;
@@ -635,7 +660,6 @@
   position: absolute;
   font-size: 36px;
   align-self: auto;
-  box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.25) ;
   font-style: Regular;
   text-align: left;
   font-family: Istok Web;
@@ -647,7 +671,7 @@
   text-decoration: none;
 }
 .filter-text26 {
-  top: 78px;
+  top: 98px;
   left: 63px;
   color: rgba(45, 34, 121, 1);
   width: 300px;
@@ -655,7 +679,6 @@
   position: absolute;
   font-size: 36px;
   align-self: auto;
-  box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.25) ;
   font-style: Regular;
   text-align: left;
   font-family: Istok Web;
@@ -667,7 +690,7 @@
   text-decoration: none;
 }
 .filter-text28 {
-  top: 143px;
+  top: 163px;
   left: 63px;
   color: rgba(45, 34, 121, 1);
   width: 300px;
@@ -675,7 +698,6 @@
   position: absolute;
   font-size: 36px;
   align-self: auto;
-  box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.25) ;
   font-style: Regular;
   text-align: left;
   font-family: Istok Web;
@@ -687,7 +709,7 @@
   text-decoration: none;
 }
 .filter-text30 {
-  top: 208px;
+  top: 228px;
   left: 63px;
   color: rgba(45, 34, 121, 1);
   width: 300px;
@@ -695,7 +717,6 @@
   position: absolute;
   font-size: 36px;
   align-self: auto;
-  box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.25) ;
   font-style: Regular;
   text-align: left;
   font-family: Istok Web;
@@ -707,7 +728,7 @@
   text-decoration: none;
 }
 .filter-text32 {
-  top: 64px;
+  top: 84px;
   left: 454px;
   color: rgba(45, 34, 121, 1);
   width: 300px;
@@ -715,7 +736,6 @@
   position: absolute;
   font-size: 36px;
   align-self: auto;
-  box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.25) ;
   font-style: Regular;
   text-align: left;
   font-family: Istok Web;
@@ -727,7 +747,7 @@
   text-decoration: none;
 }
 .filter-text34 {
-  top: 143px;
+  top: 163px;
   left: 454px;
   color: rgba(45, 34, 121, 1);
   width: 300px;
@@ -735,7 +755,6 @@
   position: absolute;
   font-size: 36px;
   align-self: auto;
-  box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.25) ;
   font-style: Regular;
   text-align: left;
   font-family: Istok Web;
@@ -747,7 +766,7 @@
   text-decoration: none;
 }
 .filter-text36 {
-  top: 208px;
+  top: 228px;
   left: 454px;
   color: rgba(45, 34, 121, 1);
   width: 300px;
@@ -755,7 +774,6 @@
   position: absolute;
   font-size: 36px;
   align-self: auto;
-  box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.25) ;
   font-style: Regular;
   text-align: left;
   font-family: Istok Web;
@@ -767,6 +785,7 @@
   text-decoration: none;
 }
 .filter-text38 {
+  top:20px;
   left: 454px;
   color: rgba(45, 34, 121, 1);
   width: 300px;
@@ -774,7 +793,6 @@
   position: absolute;
   font-size: 36px;
   align-self: auto;
-  box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.25) ;
   font-style: Regular;
   text-align: left;
   font-family: Istok Web;
@@ -1089,6 +1107,7 @@
   border-radius: 15px;
 }
 .filter-val-play-style {
+  top:-1360px;
   width: 874px;
   height: 332px;
   display: flex;
@@ -1130,41 +1149,9 @@
   border-radius: 5px;
   background-color: rgba(255, 255, 255, 1);
 }
-.filter-checkboxset09 {
-  top: 250px;
-  left: 435px;
-  width: 27px;
-  height: 27px;
-  display: flex;
-  position: absolute;
-  box-shadow: 0px 2px 2px 0px rgba(244, 244, 244, 1) ;
-  align-items: flex-start;
-  flex-shrink: 0;
-  border-color: rgba(217, 217, 217, 1);
-  border-style: solid;
-  border-width: 1px;
-  border-radius: 5px;
-  background-color: rgba(255, 255, 255, 1);
-}
 .filter-checkboxset10 {
   top: 120px;
   left: 44px;
-  width: 27px;
-  height: 27px;
-  display: flex;
-  position: absolute;
-  box-shadow: 0px 2px 2px 0px rgba(244, 244, 244, 1) ;
-  align-items: flex-start;
-  flex-shrink: 0;
-  border-color: rgba(217, 217, 217, 1);
-  border-style: solid;
-  border-width: 1px;
-  border-radius: 5px;
-  background-color: rgba(255, 255, 255, 1);
-}
-.filter-checkboxset11 {
-  top: 250px;
-  left: 435px;
   width: 27px;
   height: 27px;
   display: flex;
@@ -1194,22 +1181,6 @@
   border-radius: 5px;
   background-color: rgba(255, 255, 255, 1);
 }
-.filter-checkboxset13 {
-  top: 250px;
-  left: 435px;
-  width: 27px;
-  height: 27px;
-  display: flex;
-  position: absolute;
-  box-shadow: 0px 2px 2px 0px rgba(244, 244, 244, 1) ;
-  align-items: flex-start;
-  flex-shrink: 0;
-  border-color: rgba(217, 217, 217, 1);
-  border-style: solid;
-  border-width: 1px;
-  border-radius: 5px;
-  background-color: rgba(255, 255, 255, 1);
-}
 .filter-checkboxset14 {
   top: 250px;
   left: 44px;
@@ -1226,40 +1197,8 @@
   border-radius: 5px;
   background-color: rgba(255, 255, 255, 1);
 }
-.filter-checkboxset15 {
-  top: 250px;
-  left: 435px;
-  width: 27px;
-  height: 27px;
-  display: flex;
-  position: absolute;
-  box-shadow: 0px 2px 2px 0px rgba(244, 244, 244, 1) ;
-  align-items: flex-start;
-  flex-shrink: 0;
-  border-color: rgba(217, 217, 217, 1);
-  border-style: solid;
-  border-width: 1px;
-  border-radius: 5px;
-  background-color: rgba(255, 255, 255, 1);
-}
 .filter-checkboxset16 {
-  top: 42px;
-  left: 435px;
-  width: 27px;
-  height: 27px;
-  display: flex;
-  position: absolute;
-  box-shadow: 0px 2px 2px 0px rgba(244, 244, 244, 1) ;
-  align-items: flex-start;
-  flex-shrink: 0;
-  border-color: rgba(217, 217, 217, 1);
-  border-style: solid;
-  border-width: 1px;
-  border-radius: 5px;
-  background-color: rgba(255, 255, 255, 1);
-}
-.filter-checkboxset17 {
-  top: 250px;
+  top: 55px;
   left: 435px;
   width: 27px;
   height: 27px;
@@ -1275,23 +1214,7 @@
   background-color: rgba(255, 255, 255, 1);
 }
 .filter-checkboxset18 {
-  top: 107px;
-  left: 435px;
-  width: 27px;
-  height: 27px;
-  display: flex;
-  position: absolute;
-  box-shadow: 0px 2px 2px 0px rgba(244, 244, 244, 1) ;
-  align-items: flex-start;
-  flex-shrink: 0;
-  border-color: rgba(217, 217, 217, 1);
-  border-style: solid;
-  border-width: 1px;
-  border-radius: 5px;
-  background-color: rgba(255, 255, 255, 1);
-}
-.filter-checkboxset19 {
-  top: 250px;
+  top: 120px;
   left: 435px;
   width: 27px;
   height: 27px;
@@ -1322,22 +1245,6 @@
   border-radius: 5px;
   background-color: rgba(255, 255, 255, 1);
 }
-.filter-checkboxset21 {
-  top: 250px;
-  left: 435px;
-  width: 27px;
-  height: 27px;
-  display: flex;
-  position: absolute;
-  box-shadow: 0px 2px 2px 0px rgba(244, 244, 244, 1) ;
-  align-items: flex-start;
-  flex-shrink: 0;
-  border-color: rgba(217, 217, 217, 1);
-  border-style: solid;
-  border-width: 1px;
-  border-radius: 5px;
-  background-color: rgba(255, 255, 255, 1);
-}
 .filter-checkboxset22 {
   top: 250px;
   left: 435px;
@@ -1354,40 +1261,8 @@
   border-radius: 5px;
   background-color: rgba(255, 255, 255, 1);
 }
-.filter-checkboxset23 {
-  top: 250px;
-  left: 435px;
-  width: 27px;
-  height: 27px;
-  display: flex;
-  position: absolute;
-  box-shadow: 0px 2px 2px 0px rgba(244, 244, 244, 1) ;
-  align-items: flex-start;
-  flex-shrink: 0;
-  border-color: rgba(217, 217, 217, 1);
-  border-style: solid;
-  border-width: 1px;
-  border-radius: 5px;
-  background-color: rgba(255, 255, 255, 1);
-}
-.filter-checkboxset24 {
-  top: 250px;
-  left: 435px;
-  width: 27px;
-  height: 27px;
-  display: flex;
-  position: absolute;
-  box-shadow: 0px 2px 2px 0px rgba(244, 244, 244, 1) ;
-  align-items: flex-start;
-  flex-shrink: 0;
-  border-color: rgba(217, 217, 217, 1);
-  border-style: solid;
-  border-width: 1px;
-  border-radius: 5px;
-  background-color: rgba(255, 255, 255, 1);
-}
 .filter-text40 {
-  top: 42px;
+  top: 52px;
   left: 84px;
   color: rgba(45, 34, 121, 1);
   width: 300px;
@@ -1395,7 +1270,6 @@
   position: absolute;
   font-size: 36px;
   align-self: auto;
-  box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.25) ;
   font-style: Regular;
   text-align: left;
   font-family: Istok Web;
@@ -1407,7 +1281,7 @@
   text-decoration: none;
 }
 .filter-text42 {
-  top: 101px;
+  top: 121px;
   left: 84px;
   color: rgba(45, 34, 121, 1);
   width: 300px;
@@ -1415,7 +1289,6 @@
   position: absolute;
   font-size: 36px;
   align-self: auto;
-  box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.25) ;
   font-style: Regular;
   text-align: left;
   font-family: Istok Web;
@@ -1427,7 +1300,7 @@
   text-decoration: none;
 }
 .filter-text44 {
-  top: 166px;
+  top: 186px;
   left: 84px;
   color: rgba(45, 34, 121, 1);
   width: 300px;
@@ -1435,7 +1308,6 @@
   position: absolute;
   font-size: 36px;
   align-self: auto;
-  box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.25) ;
   font-style: Regular;
   text-align: left;
   font-family: Istok Web;
@@ -1447,7 +1319,7 @@
   text-decoration: none;
 }
 .filter-text46 {
-  top: 231px;
+  top: 251px;
   left: 84px;
   color: rgba(45, 34, 121, 1);
   width: 300px;
@@ -1455,7 +1327,6 @@
   position: absolute;
   font-size: 36px;
   align-self: auto;
-  box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.25) ;
   font-style: Regular;
   text-align: left;
   font-family: Istok Web;
@@ -1467,7 +1338,7 @@
   text-decoration: none;
 }
 .filter-text48 {
-  top: 87px;
+  top: 117px;
   left: 475px;
   color: rgba(45, 34, 121, 1);
   width: 300px;
@@ -1475,7 +1346,6 @@
   position: absolute;
   font-size: 36px;
   align-self: auto;
-  box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.25) ;
   font-style: Regular;
   text-align: left;
   font-family: Istok Web;
@@ -1487,7 +1357,7 @@
   text-decoration: none;
 }
 .filter-text50 {
-  top: 166px;
+  top: 186px;
   left: 475px;
   color: rgba(45, 34, 121, 1);
   width: 300px;
@@ -1495,7 +1365,6 @@
   position: absolute;
   font-size: 36px;
   align-self: auto;
-  box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.25) ;
   font-style: Regular;
   text-align: left;
   font-family: Istok Web;
@@ -1507,7 +1376,7 @@
   text-decoration: none;
 }
 .filter-text52 {
-  top: 231px;
+  top: 251px;
   left: 475px;
   color: rgba(45, 34, 121, 1);
   width: 300px;
@@ -1515,7 +1384,6 @@
   position: absolute;
   font-size: 36px;
   align-self: auto;
-  box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.25) ;
   font-style: Regular;
   text-align: left;
   font-family: Istok Web;
@@ -1527,7 +1395,7 @@
   text-decoration: none;
 }
 .filter-text54 {
-  top: 23px;
+  top: 53px;
   left: 475px;
   color: rgba(45, 34, 121, 1);
   width: 300px;
@@ -1535,7 +1403,6 @@
   position: absolute;
   font-size: 36px;
   align-self: auto;
-  box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.25) ;
   font-style: Regular;
   text-align: left;
   font-family: Istok Web;

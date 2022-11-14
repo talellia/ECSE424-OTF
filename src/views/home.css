@@ -244,6 +244,7 @@
   border-radius: 8px;
   flex-direction: column;
   background-color: rgba(45, 34, 121, 1);
+  
 }
 .home-content {
   display: flex;
@@ -293,7 +294,6 @@
   position: absolute;
   align-items: flex-start;
   flex-shrink: 0;
-  border-color: transparent;
 }
 .home-framemodernlarge-base {
   top: -5.039999961853027px;
@@ -317,7 +317,6 @@
   position: relative;
   align-self: stretch;
   align-items: flex-start;
-  border-color: transparent;
 }
 .home-text11 {
   color: rgba(217, 217, 217, 1);
@@ -333,6 +332,8 @@
   margin-right: 0;
   margin-bottom: 0;
   text-decoration: none;
+  border: 3px;
+  border-color: black;
 }
 .home-frameiconoptions1 {
   top: 3.359999895095825px;
