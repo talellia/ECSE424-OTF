@@ -482,3 +482,11 @@
   border-color: transparent;
   border-radius: 100px;
 }
+
+.menue-home-page{
+  position: absolute;
+  top: 0;
+  left: 0px;
+  z-index: 2;
+  visibility: hidden;
+}

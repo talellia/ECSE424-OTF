@@ -1,17 +1,22 @@
 import React from 'react'
 
-import { Helmet } from 'react-helmet'
+import { Helmet } from 'react-helmet';
+import Menue from '../components/menue';
+import Filter from '../components/filter';
 
 import './home.css'
 
 const Home = (props) => {
+
   return (
     <div className="home-container">
       <Helmet>
-        <title>Home - exported project</title>
+        <title>Home</title>
         <meta property="og:title" content="Home - exported project" />
       </Helmet>
+
       <div className="home-home">
+          <Menue rootClassName={"menue-home-page"}></Menue>
         <div className="home-back-ground">
           <img
             alt="IMAGE5403411I111"
@@ -31,13 +36,14 @@ const Home = (props) => {
             src="https://aheioqhobo.cloudimg.io/v7/_playground-bucket-v2.teleporthq.io_/3970f017-b141-4456-afd4-fb36d956eb37/42d5471f-603b-4450-9aa3-d5a56e0b2e06?org_if_sml=18841"
             className="home-rectangle13"
           />
-          <div className="home-frameiconmenu">
+          <button id="menueIcon" onClick={openMenue} className="home-frameiconmenu">
             <img
+              type="menu-fold"
               alt="VectorI111"
               src="/playground_assets/vectori111-ikra.svg"
               className="home-vector"
             />
-          </div>
+          </button>
           <span className="home-text07">
             <span>Home</span>
           </span>
@@ -52,7 +58,8 @@ const Home = (props) => {
           </div>
         </button>
         <div className="home-search-bar">
-          <img
+          <input
+            type = "test"
             alt="Rectangle14I111"
             src="https://aheioqhobo.cloudimg.io/v7/_playground-bucket-v2.teleporthq.io_/3970f017-b141-4456-afd4-fb36d956eb37/fafce5a4-d289-43df-b28c-c6630e1f3935?org_if_sml=11024"
             className="home-rectangle14"
@@ -70,7 +77,7 @@ const Home = (props) => {
             />
           </div>
         </div>
-        <div className="home-framemodernmedium-base">
+        <button type="button" className="home-framemodernmedium-base">
           <div className="home-content">
             <span className="home-text09">
               <span>Clear</span>
@@ -83,8 +90,8 @@ const Home = (props) => {
               />
             </div>
           </div>
-        </div>
-        <button className="home-filter-button1">
+        </button>
+        <button onClick={openfilter} className="home-filter-button1">
           <div className="home-framemodernlarge-base">
             <div className="home-content1">
               <span className="home-text11"></span>
@@ -98,6 +105,7 @@ const Home = (props) => {
             />
           </div>
         </button>
+        <Filter rootClassName=""></Filter>
         <div className="home-post">
           <div className="home-add1">
             <div className="home-rectangle141">
@@ -149,6 +157,27 @@ const Home = (props) => {
       </div>
     </div>
   )
+}
+
+function   openMenue() {
+  if (document.getElementById("menu").style.visibility === "visible"){
+    document.getElementById("menu").style.visibility = "hidden"
+    document.getElementById("menueIcon").style.left = "204px"
+  }else{
+    document.getElementById("menu").style.visibility = "visible"
+    document.getElementById("menueIcon").style.left = "calc(204px + 353px)"
+  }
+
+}
+
+function openfilter(){
+  if( document.getElementById("filter").style.visibility === "visible"){
+    document.getElementById("filter").style.visibility = "hidden";
+
+  }else{  
+    document.getElementById("filter").style.visibility = "visible";
+
+  }
 }
 
 export default Home

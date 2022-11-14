@@ -1,10 +1,26 @@
 import React from 'react'
+import PropTypes from 'prop-types'
 
 import './filter.css'
 
 const Filter = (props) => {
+  var valorantRank = [];
+
+  const handleClick = event => {
+    selectValRank(event.currentTarget.id, event.currentTarget.stateclick);
+    if (event.currentTarget.stateclick === 0 || event.currentTarget.stateclick === undefined) {
+      valorantRank.push(event.currentTarget.value);
+      event.currentTarget.stateclick = 1;
+    } else {
+      event.currentTarget.stateclick = 0;
+      var index = valorantRank.findIndex(e => e === event.currentTarget.value);
+      valorantRank.splice(index, 1)
+    }
+    console.log(valorantRank)
+  };
+
   return (
-    <div className="filter-container">
+    <div id="filter" className={`filter-container ${props.rootClassName} `}>
       <div className="filter-initial">
         <img
           alt="Rectangle461799"
@@ -16,81 +32,100 @@ const Filter = (props) => {
           src="/playground_assets/polygon11799-u28p.svg"
           className="filter-polygon1"
         />
-        <img
-          alt="Rectangle471710"
-          src="/playground_assets/rectangle471710-35oi.svg"
-          className="filter-rectangle47"
-        />
-        <span className="filter-text">
-          <span>Game</span>
-        </span>
+        <button onClick={openGameSelect}>
+          <img
+            alt="Rectangle471710"
+            src="/playground_assets/rectangle471710-35oi.svg"
+            className="filter-rectangle47"
+          />
+          <span className="filter-text">
+            <span>Game</span>
+          </span>
+        </button>
       </div>
-      <div className="filter-game-choise">
+      <div id="filterGameChoise" className="filter-game-choise">
         <img
           alt="Rectangle531710"
           src="/playground_assets/rectangle531710-at7u-500h.png"
           className="filter-rectangle53"
         />
-        <img
-          alt="Rectangle541710"
-          src="/playground_assets/rectangle541710-w23t-200h.png"
-          className="filter-rectangle54"
-        />
-        <img
-          alt="Rectangle551710"
-          src="/playground_assets/rectangle551710-6rse.svg"
-          className="filter-rectangle55"
-        />
-        <img
-          alt="Rectangle561710"
-          src="/playground_assets/rectangle561710-djmq.svg"
-          className="filter-rectangle56"
-        />
-        <img
-          alt="Rectangle571710"
-          src="/playground_assets/rectangle571710-ydtf.svg"
-          className="filter-rectangle57"
-        />
-        <img
-          alt="Rectangle581710"
-          src="/playground_assets/rectangle581710-o2kj.svg"
-          className="filter-rectangle58"
-        />
-        <img
-          alt="Rectangle591711"
-          src="/playground_assets/rectangle591711-w6f.svg"
-          className="filter-rectangle59"
-        />
-        <img
-          alt="Rectangle601711"
-          src="/playground_assets/rectangle601711-psb9-200h.png"
-          className="filter-rectangle60"
-        />
-        <span className="filter-text02">
-          <span>Valorant</span>
-        </span>
-        <span className="filter-text04">
-          <span>Fifa</span>
-        </span>
-        <span className="filter-text06">
-          <span>League of Legends</span>
-        </span>
-        <span className="filter-text08">
-          <span>CSGO</span>
-        </span>
-        <span className="filter-text10">
-          <span>Overwatch</span>
-        </span>
-        <span className="filter-text12">
-          <span>Call of Dudy</span>
-        </span>
+        <button id="gameTitle">
+          <img
+            alt="Rectangle541710"
+            src="/playground_assets/rectangle541710-w23t-200h.png"
+            className="filter-Gametile"
+          />
+          <span className="filter-game-title">
+            <span><b>Game</b></span>
+          </span>
+        </button>
+        <button id="gameValorant" onClick={openGameValorant}>
+          <img
+            alt="Rectangle551710"
+            src="/playground_assets/rectangle551710-6rse.svg"
+            className="filter-rectangle55"
+          />
+          <span className="filter-text02">
+            <span>Valorant</span>
+          </span>
+        </button>
+        <button id="gameCOD">
+          <img
+            alt="Rectangle561710"
+            src="/playground_assets/rectangle561710-djmq.svg"
+            className="filter-rectangle56"
+          />
+          <span className="filter-text12">
+            <span>Call of Dudy</span>
+          </span>
+        </button>
+        <button id="gameFifa">
+          <img
+            alt="Rectangle591711"
+            src="/playground_assets/rectangle591711-w6f.svg"
+            className="filter-rectangle59"
+          />
+          <span className="filter-text04">
+            <span>Fifa</span>
+          </span>
+        </button>
+        <button id="gameOw">
+          <img
+            alt="Rectangle581710"
+            src="/playground_assets/rectangle581710-o2kj.svg"
+            className="filter-rectangle58"
+          />
+          <span className="filter-text10">
+            <span>Overwatch</span>
+          </span>
+        </button>
+        <button id="gameCSGO">
+          <img
+            alt="Rectangle571710"
+            src="/playground_assets/rectangle571710-ydtf.svg"
+            className="filter-rectangle57"
+          />
+          <span className="filter-text08">
+            <span>CSGO</span>
+          </span>
+        </button>
+        <button id="gameLol">
+          <img
+            alt="Rectangle601711"
+            src="/playground_assets/rectangle601711-psb9-200h.png"
+            className="filter-rectangle60"
+          />
+          <span className="filter-text06">
+            <span>League of Legends</span>
+          </span>
+        </button>
         <img
           alt="Polygon31711"
           src="/playground_assets/polygon31711-7pxw.svg"
           className="filter-polygon3"
         />
       </div>
-      <div className="filter-val">
+      <div id="filterVal" className="filter-val">
         <img
           alt="Rectangle531712"
           src="/playground_assets/rectangle531712-ys46-900w.png"
@@ -101,37 +136,43 @@ const Filter = (props) => {
           src="/playground_assets/polygon21710-vpr.svg"
           className="filter-polygon2"
         />
-        <img
-          alt="Rectangle501711"
-          src="/playground_assets/rectangle501711-0u4.svg"
-          className="filter-rectangle50"
-        />
-        <img
-          alt="Rectangle521711"
-          src="/playground_assets/rectangle521711-vfbq.svg"
-          className="filter-rectangle52"
-        />
-        <img
-          alt="Rectangle511711"
-          src="/playground_assets/rectangle511711-zpx.svg"
-          className="filter-rectangle51"
-        />
+        <button id="filter-val-Rank-button" onClick={openValorantRank}>
+          <img
+            alt="Rectangle501711"
+            src="/playground_assets/rectangle501711-0u4.svg"
+            className="filter-rectangle50"
+          />
+          <span className="filter-text14">
+            <span>Rank</span>
+          </span>
+        </button>
+        <button id="filter-val-lf-button">
+          <img
+            alt="Rectangle511711"
+            src="/playground_assets/rectangle511711-zpx.svg"
+            className="filter-rectangle51"
+          />
+          <span className="filter-text16">
+            <span>Looking for?</span>
+          </span>
+        </button>
+        <button id="filter-val-playStyle-button">
+          <img
+            alt="Rectangle521711"
+            src="/playground_assets/rectangle521711-vfbq.svg"
+            className="filter-rectangle52"
+          />
+          <span className="filter-text18">
+            <span>Play Style</span>
+          </span>
+        </button>
         <img
           alt="Rectangle491710"
           src="/playground_assets/rectangle491710-262e.svg"
           className="filter-rectangle49"
         />
-        <span className="filter-text14">
-          <span>Rank</span>
-        </span>
-        <span className="filter-text16">
-          <span>Looking for?</span>
-        </span>
-        <span className="filter-text18">
-          <span>Play Style</span>
-        </span>
         <span className="filter-text20">
-          <span>Valorant</span>
+          <span><b>Valorant</b></span>
         </span>
         <div className="filter-framebasic-outlinemedium-base">
           <div className="filter-content">
@@ -221,7 +262,7 @@ const Filter = (props) => {
           </span>
         </span>
       </div>
-      <div className="filter-val-rank">
+      <div id="filter-val-Rank" className="filter-val-rank">
         <img
           alt="Rectangle942396"
           src="/playground_assets/rectangle942396-so6s.svg"
@@ -232,127 +273,227 @@ const Filter = (props) => {
           src="/playground_assets/valorantranks11711-f9me-900w.png"
           className="filter-valorantranks1"
         />
-        <img
+        {/* TODO: add values to buttons */}
+        <button
+          onMouseDown={handleClick}
+          stateclick={0}
+          value={"radiant"}
+          id="valorant-rank-radiant"
           alt="Rectangle681711"
           src="/playground_assets/rectangle681711-ds5f-200h.png"
           className="filter-rectangle68"
         />
-        <img
+        <button
+          onMouseDown={handleClick}
+          stateclick="0"
+          id="valorant-rank-im2"
+          value={"im2"}
           alt="Rectangle691711"
           src="/playground_assets/rectangle691711-0e6r-200h.png"
           className="filter-rectangle69"
         />
-        <img
-          alt="Rectangle701711"
+        <button
+          onMouseDown={handleClick}
+          stateclick="0"
+          value={"im1"}
+          id="valorant-rank-immortal1"
           src="/playground_assets/rectangle701711-m93-200h.png"
           className="filter-rectangle70"
         />
-        <img
+        <button
+          onMouseDown={handleClick}
+          stateclick="0"
+          value={"im3"}
+          id="valorant-rank-immortal3"
           alt="Rectangle711711"
           src="/playground_assets/rectangle711711-g8xc-200h.png"
           className="filter-rectangle71"
         />
-        <img
+        <button
+          onMouseDown={handleClick}
+          stateclick="0"
+          value={"asc3"}
+          id="valorant-rank-asc3"
           alt="Rectangle721711"
           src="/playground_assets/rectangle721711-pb6d-200h.png"
           className="filter-rectangle72"
         />
-        <img
+        <button
+          onMouseDown={handleClick}
+          stateclick="0"
+          value={"asc2"}
+          id="valorant-rank-asc2"
           alt="Rectangle731711"
           src="/playground_assets/rectangle731711-11q8-200h.png"
           className="filter-rectangle73"
         />
-        <img
+        <button
+          onMouseDown={handleClick}
+          stateclick="0"
+          value={"asc1"}
+          id="valorant-rank-asc1"
           alt="Rectangle741711"
           src="/playground_assets/rectangle741711-vw4-200h.png"
           className="filter-rectangle74"
         />
-        <img
+        <button
+          onMouseDown={handleClick}
+          stateclick="0"
+          value={"d1"}
+          id="valorant-rank-d1"
           alt="Rectangle751711"
           src="/playground_assets/rectangle751711-axn-200h.png"
           className="filter-rectangle75"
         />
-        <img
+        <button
+          onMouseDown={handleClick}
+          stateclick="0"
+          value={"d2"}
+          id="valorant-rank-d2"
           alt="Rectangle761711"
           src="/playground_assets/rectangle761711-3wn-200h.png"
           className="filter-rectangle76"
         />
-        <img
+        <button
+          onMouseDown={handleClick}
+          stateclick="0"
+          value={"d3"}
+          id="valorant-rank-d3"
           alt="Rectangle771711"
           src="/playground_assets/rectangle771711-8al-200h.png"
           className="filter-rectangle77"
         />
-        <img
+        <button
+          onMouseDown={handleClick}
+          stateclick="0"
+          value={"p3"}
+          id="valorant-rank-p3"
           alt="Rectangle781711"
           src="/playground_assets/rectangle781711-1yr-200h.png"
           className="filter-rectangle78"
         />
-        <img
+        <button
+          onMouseDown={handleClick}
+          stateclick="0"
+          value={"p2"}
+          id="valorant-rank-p2"
           alt="Rectangle791711"
           src="/playground_assets/rectangle791711-j9m-200h.png"
           className="filter-rectangle79"
         />
-        <img
+        <button
+          onMouseDown={handleClick}
+          stateclick="0"
+          value={"g2"}
+          id="valorant-rank-g2"
           alt="Rectangle811711"
           src="/playground_assets/rectangle811711-btmf-200h.png"
           className="filter-rectangle81"
         />
-        <img
+        <button
+          onMouseDown={handleClick}
+          stateclick="0"
+          value={"g3"}
+          id="valorant-rank-g3"
           alt="Rectangle821711"
           src="/playground_assets/rectangle821711-79y-200h.png"
           className="filter-rectangle82"
         />
-        <img
+        <button
+          onMouseDown={handleClick}
+          stateclick="0"
+          value={"s3"}
+          id="valorant-rank-s3"
           alt="Rectangle841711"
           src="/playground_assets/rectangle841711-nsy-200h.png"
           className="filter-rectangle84"
         />
-        <img
+        <button
+          onMouseDown={handleClick}
+          stateclick="0"
+          value={"s2"}
+          id="valorant-rank-s2"
           alt="Rectangle851711"
           src="/playground_assets/rectangle851711-qgqw-200h.png"
           className="filter-rectangle85"
         />
-        <img
+        <button
+          onMouseDown={handleClick}
+          stateclick="0"
+          value={"s1"}
+          id="valorant-rank-s1"
           alt="Rectangle861711"
           src="/playground_assets/rectangle861711-ygqh-200h.png"
           className="filter-rectangle86"
         />
-        <img
+        <button
+          onMouseDown={handleClick}
+          stateclick="0"
+          value={"b1"}
+          id="valorant-rank-b1"
           alt="Rectangle871711"
           src="/playground_assets/rectangle871711-lza9-200h.png"
           className="filter-rectangle87"
         />
-        <img
+        <button
+          onMouseDown={handleClick}
+          stateclick="0"
+          value={"b2"}
+          id="valorant-rank-b2"
           alt="Rectangle881711"
           src="/playground_assets/rectangle881711-ektr-200h.png"
           className="filter-rectangle88"
         />
-        <img
+        <button
+          onMouseDown={handleClick}
+          stateclick="0"
+          value={"b3"}
+          id="valorant-rank-b3"
           alt="Rectangle891711"
           src="/playground_assets/rectangle891711-u2k9-200h.png"
           className="filter-rectangle89"
         />
-        <img
+        <button
+          onMouseDown={handleClick}
+          stateclick="0"
+          value={"i1"}
+          id="valorant-rank-i1"
           alt="Rectangle921711"
           src="/playground_assets/rectangle921711-ev9c-200h.png"
           className="filter-rectangle92"
         />
-        <img
+        <button
+          onMouseDown={handleClick}
+          stateclick="0"
+          value={"i2"}
+          id="valorant-rank-i2"
           alt="Rectangle952396"
           src="/playground_assets/rectangle952396-qgqu-200h.png"
           className="filter-rectangle95"
         />
-        <img
+        <button
+          onMouseDown={handleClick}
+          stateclick="0"
+          value={"i3"}
+          id="valorant-rank-i3"
           alt="Rectangle962396"
           src="/playground_assets/rectangle962396-0th-200h.png"
           className="filter-rectangle96"
         />
-        <img
+        <button
+          onMouseDown={handleClick}
+          stateclick="0"
+          value={"g1"}
+          id="valorant-rank-g1"
           alt="Rectangle831711"
           src="/playground_assets/rectangle831711-44fa-200h.png"
           className="filter-rectangle83"
         />
-        <img
+        <button
+          onMouseDown={handleClick}
+          stateclick="0"
+          value={"p1"}
+          id="valorant-rank-p1"
           alt="Rectangle801711"
           src="/playground_assets/rectangle801711-8qt-200h.png"
           className="filter-rectangle80"
@@ -427,6 +568,36 @@ const Filter = (props) => {
       </div>
     </div>
   )
+}
+
+function openGameSelect() {
+  document.getElementById("filterGameChoise").style.visibility = "visible"
+}
+function openGameValorant() {
+  document.getElementById("filterGameChoise").style.visibility = "hidden"
+  document.getElementById("filterVal").style.visibility = "visible"
+}
+function openValorantRank() {
+  if (document.getElementById("filter-val-Rank").style.visibility === "hidden" || document.getElementById("filter-val-Rank").style.visibility === "") {
+    document.getElementById("filter-val-Rank").style.visibility = "visible";
+  } else {
+    document.getElementById("filter-val-Rank").style.visibility = "hidden";
+  }
+}
+function selectValRank(id, stateclick) {
+  if (stateclick === 1) {
+    document.getElementById(id).style.backgroundColor = "";
+  } else {
+    document.getElementById(id).style.backgroundColor = "#d9d9d950";
+  }
+}
+
+Filter.defaultProps = {
+  rootClassName: '',
+}
+
+Filter.propTypes = {
+  rootClassName: PropTypes.string,
 }
 
 export default Filter

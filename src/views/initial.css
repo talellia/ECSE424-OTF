@@ -12,15 +12,20 @@
 }
 .initial-rectangle1 {
   top: 10%;
-  left: 20%;
-  width: 70%;
+  left: 10%;
+  width: 80%;
   height: 80%;
   position: absolute;
   border-color: transparent;
 }
+.initial-rectangle11 {
+  width: 100%;
+  height: 100%;
+  border-color: transparent;
+}
 .initial-text-info {
-  top: 15%;
-  right: 15%;
+  padding-top: 10%;
+  padding-left: 10%;
   width: 35%;
   height: 50%;
   display: flex;
@@ -140,12 +145,12 @@
   text-decoration: none;
 }
 .initial-text20 {
-  color: #d9d9d9;
+  color: rgb(217, 217, 217);
 }
 .initial-text22 {
   top: 10%;
   left: 8.5%;
-  color: rgba(45, 34, 121, 1);
+  color: rgb(45, 34, 121);
   width: 783px;
   height: auto;
   position: absolute;
@@ -170,7 +175,7 @@
 .initial-text25 {
   top: 70%;
   left: 10%;
-  color: rgba(45, 34, 121, 1);
+  color: #2d2279;
   width: 850px;
   height: auto;
   position: absolute;

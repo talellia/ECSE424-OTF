@@ -1,10 +1,14 @@
 .filter-container {
+  top: 214px;
+  left: 280px;
   width: 907px;
   height: 5582px;
   display: flex;
   position: relative;
   align-items: flex-start;
   flex-direction: column;
+  z-index:2;
+  visibility: hidden;
 }
 .filter-initial {
   width: 873px;
@@ -60,6 +64,7 @@
   text-decoration: none;
 }
 .filter-game-choise {
+  top:-155px;
   width: 870px;
   height: 434px;
   display: flex;
@@ -67,6 +72,7 @@
   align-items: flex-start;
   flex-shrink: 0;
   border-color: transparent;
+  visibility: hidden;
 }
 .filter-rectangle53 {
   top: 20px;
@@ -79,7 +85,7 @@
   border-width: 5px;
   border-radius: 41px;
 }
-.filter-rectangle54 {
+.filter-Gametile {
   top: 44px;
   left: 21px;
   width: 829px;
@@ -136,8 +142,8 @@
   border-width: 2px;
   border-radius: 0 0 20px 20px;
 }
-.filter-text02 {
-  top: 98px;
+.filter-game-title {
+  top: 60px;
   left: 21px;
   color: rgba(45, 34, 121, 1);
   width: 829px;
@@ -154,9 +160,30 @@
   margin-right: 0;
   margin-bottom: 0;
   text-decoration: none;
+  z-index:2;
+}
+.filter-text02 {
+  top: 110px;
+  left: 21px;
+  color: rgba(45, 34, 121, 1);
+  width: 829px;
+  height: auto;
+  position: absolute;
+  font-size: 36px;
+  align-self: auto;
+  font-style: Regular;
+  text-align: center;
+  font-family: Istok Web;
+  font-weight: 400;
+  line-height: 32px;
+  font-stretch: normal;
+  margin-right: 0;
+  margin-bottom: 0;
+  text-decoration: none;
+  z-index:2;
 }
 .filter-text04 {
-  top: 206px;
+  top: 216px;
   left: 21px;
   color: rgba(45, 34, 121, 1);
   width: 829px;
@@ -175,7 +202,7 @@
   text-decoration: none;
 }
 .filter-text06 {
-  top: 368px;
+  top: 378px;
   left: 21px;
   color: rgba(45, 34, 121, 1);
   width: 829px;
@@ -194,7 +221,7 @@
   text-decoration: none;
 }
 .filter-text08 {
-  top: 314px;
+  top: 324px;
   left: 21px;
   color: rgba(45, 34, 121, 1);
   width: 829px;
@@ -213,7 +240,7 @@
   text-decoration: none;
 }
 .filter-text10 {
-  top: 260px;
+  top: 270px;
   left: 21px;
   color: rgba(45, 34, 121, 1);
   width: 829px;
@@ -232,7 +259,7 @@
   text-decoration: none;
 }
 .filter-text12 {
-  top: 152px;
+  top: 162px;
   left: 21px;
   color: rgba(45, 34, 121, 1);
   width: 829px;
@@ -258,6 +285,7 @@
   position: absolute;
 }
 .filter-val {
+  top:-590px;
   width: 864px;
   height: 447px;
   display: flex;
@@ -265,6 +293,7 @@
   align-items: flex-start;
   flex-shrink: 0;
   border-color: transparent;
+  visibility: hidden;
 }
 .filter-rectangle531 {
   top: 21px;
@@ -451,6 +480,7 @@
   align-items: flex-start;
   flex-shrink: 0;
   border-color: transparent;
+  visibility: hidden;
 }
 .filter-rectangle541 {
   top: -23px;
@@ -756,18 +786,21 @@
   text-decoration: none;
 }
 .filter-val-rank {
-  width: 849px;
+  top:-1168px;
+  left:18px;
+  width: 880px;
   height: 313px;
   display: flex;
   position: relative;
   align-items: flex-start;
   flex-shrink: 0;
   border-color: transparent;
+  visibility: hidden;
 }
 .filter-rectangle94 {
   top: -32.5px;
   left: -22px;
-  width: 871px;
+  width: 880px;
   height: 332px;
   position: absolute;
 }
@@ -1063,6 +1096,7 @@
   align-items: flex-start;
   flex-shrink: 0;
   border-color: transparent;
+  visibility: hidden;
 }
 .filter-rectangle542 {
   top: -25px;

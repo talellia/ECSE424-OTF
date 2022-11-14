@@ -1,10 +1,11 @@
 import React from 'react'
+import PropTypes from 'prop-types'
 
 import './menue.css'
 
 const Menue = (props) => {
   return (
-    <div className="menue-container">
+    <div id="menu" className={`menue-container ${props.rootClassName} `}>
       <div className="menue-menu">
         <img
           alt="Rectangle121788"
@@ -137,6 +138,14 @@ const Menue = (props) => {
       </div>
     </div>
   )
+}
+
+Menue.defaultProps = {
+  rootClassName: '',
+}
+
+Menue.propTypes = {
+  rootClassName: PropTypes.string,
 }
 
 export default Menue

@@ -90,8 +90,8 @@
 .home-frameiconmenu {
   top: 60px;
   left: 204px;
-  width: 66px;
-  height: 43.397308349609375px;
+  height: 60px;
+  width: 80px;
   display: flex;
   padding: 0;
   position: absolute;
@@ -110,8 +110,8 @@
   background-color: transparent;
 }
 .home-vector {
-  top: 0px;
-  left: 0px;
+  top: calc(50% - 21.5px);
+  left: calc(50% - 33px);
   width: 66px;
   height: 43px;
   position: absolute;
@@ -547,3 +547,13 @@
   margin-bottom: 0;
   text-decoration: none;
 }
+.home-frameiconmenu:hover{
+  height: 60px;
+  width: 80px;
+  background-color: #d9d9d9;
+  border-style: solid;
+  border-radius: 10px;
+  border-color: rgba(45, 34, 121, 1);
+}
+
+
