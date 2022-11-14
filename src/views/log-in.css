@@ -135,8 +135,8 @@
   color: rgba(217, 217, 217, 1);
 }
 .log-in-framemodernlarge-base {
-  top: calc(100% - 40px - 20%);
-  left: 25%;
+  top: calc(100% - 40px - 10%);
+  left: 45%;
   width: fit-content;
   display: flex;
   padding: 16px 32px;

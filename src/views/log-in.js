@@ -80,7 +80,6 @@ const LogIn = (props) => {
             <b>LOG IN</b>
           </span>
           <span className="loginInfo1">
-            txtx
           </span>
           <span className="log-in-text15">
             <span>Password</span>

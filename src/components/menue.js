@@ -1,9 +1,28 @@
 import React from 'react'
 import PropTypes from 'prop-types'
+import { useHistory } from "react-router-dom"
 
 import './menue.css'
 
 const Menue = (props) => {
+
+  const history = useHistory();
+
+  const contactUs = () => {
+    history.push("/contact-us1")
+  }
+
+  const accountEdit = () => {
+    history.push("/account-edit")
+  }
+
+  const signOut = () => {
+    history.push("/")
+  }
+  //temporary for only home page, only one having menu now
+  function refreshPage() {
+    window.location.reload(false);
+  }
   return (
     <div id="menu" className={`menue-container ${props.rootClassName} `}>
       <div className="menue-menu">
@@ -12,7 +31,7 @@ const Menue = (props) => {
           src="/playground_assets/rectangle121788-qebj-400w.png"
           className="menue-rectangle12"
         />
-        <button className="menue-main-button">
+        <button className="menue-main-button" onClick={refreshPage}>
           <img
             alt="Rectangle20I178"
             src="/playground_assets/rectangle20i178-qde-200h.png"
@@ -69,7 +88,7 @@ const Menue = (props) => {
             />
           </div>
         </button>
-        <button className="menue-contact-us-button">
+        <button className="menue-contact-us-button" onClick={contactUs}>
           <img
             alt="Rectangle21I178"
             src="/playground_assets/rectangle21i178-mgqu-200h.png"
@@ -91,7 +110,7 @@ const Menue = (props) => {
             <span>Contact Us</span>
           </span>
         </button>
-        <button className="menue-sign-out-button">
+        <button className="menue-sign-out-button" onClick={signOut}>
           <img
             alt="Rectangle20I178"
             src="/playground_assets/rectangle20i178-0ry9-200h.png"
@@ -120,7 +139,7 @@ const Menue = (props) => {
           src="/playground_assets/line11789-e10g.svg"
           className="menue-line1"
         />
-        <div className="menue-account">
+        <div className="menue-account" onClick={accountEdit}>
           <span className="menue-text19">
             <span>SamSam5</span>
           </span>

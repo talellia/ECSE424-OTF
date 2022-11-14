@@ -3,6 +3,7 @@ import React from 'react'
 import { Helmet } from 'react-helmet';
 import Menue from '../components/menue';
 import Filter from '../components/filter';
+import BigAdd from '../components/big-add'
 
 import './home.css'
 
@@ -17,6 +18,7 @@ const Home = (props) => {
 
       <div className="home-home">
           <Menue rootClassName={"menue-home-page"}></Menue>
+          <BigAdd />
         <div className="home-back-ground">
           <img
             alt="IMAGE5403411I111"
