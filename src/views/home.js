@@ -1,16 +1,29 @@
-import React from 'react'
+import React, {useState} from 'react'
 
 import { Helmet } from 'react-helmet';
 import Menue from '../components/menue';
 import Filter from '../components/filter';
 import {valLF,valPlayStyle,valorantRank} from '../components/filter';
+import BigAdd from '../components/big-add'
 
 
 import './home.css'
 
 var tempVal = {};
 
+
 const Home = (props) => {
+
+  const [isShown, setIsShown] = useState(false)
+
+  const handleClick = () => {
+    // 👇️ toggle shown state
+    setIsShown(current => !current)
+  }
+
+  const handleClose = () => {
+    setIsShown(current => false)
+  }
 
   return (
     <div className="home-container">
@@ -21,7 +34,7 @@ const Home = (props) => {
 
       <div className="home-home">
           <Menue rootClassName={"menue-home-page"}></Menue>
-        <div className="home-back-ground">
+        <div className="home-back-ground" onClick={handleClose}>
           <img
             alt="IMAGE5403411I111"
             src="https://aheioqhobo.cloudimg.io/v7/_playground-bucket-v2.teleporthq.io_/3970f017-b141-4456-afd4-fb36d956eb37/0fd2c00f-c6f3-4997-950d-9075e67bf09d?org_if_sml=13606374"
@@ -113,7 +126,7 @@ const Home = (props) => {
         <div className="home-post">
           <div className="home-add1">
             <div className="home-rectangle141">
-              <img
+              <img onClick={handleClick}
                 alt="Rectangle14I213"
                 src="https://aheioqhobo.cloudimg.io/v7/_playground-bucket-v2.teleporthq.io_/3970f017-b141-4456-afd4-fb36d956eb37/a3b8061e-fe71-498a-841f-53ffa398115a?org_if_sml=11012"
                 className="home-rectangle142"
@@ -138,6 +151,7 @@ const Home = (props) => {
           <div className="home-add11">
             <div className="home-rectangle143">
               <img
+               onClick={handleClick}
                 alt="Rectangle14I214"
                 src="https://aheioqhobo.cloudimg.io/v7/_playground-bucket-v2.teleporthq.io_/3970f017-b141-4456-afd4-fb36d956eb37/263d3d04-065b-41fe-a56f-2a119ddf24bb?org_if_sml=11012"
                 className="home-rectangle144"
@@ -158,6 +172,7 @@ const Home = (props) => {
             <span>Date</span>
           </span>
         </div>
+        {isShown && <BigAdd onClick={handleClose} />}
       </div>
     </div>
   )

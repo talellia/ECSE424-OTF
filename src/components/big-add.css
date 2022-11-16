@@ -1,10 +1,9 @@
 .big-add-container {
   width: 646px;
   height: 629px;
-  display: flex;
-  position: relative;
-  align-items: flex-start;
-  flex-direction: column;
+  display: center;
+  justify-content: center;
+  align-items: center;
 }
 .big-add-add-pop-up {
   width: 100%;

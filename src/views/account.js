@@ -2,11 +2,20 @@ import React from 'react'
 
 import { Helmet } from 'react-helmet'
 import Menue from '../components/menue';
+import { useHistory } from "react-router-dom"
+
 
 
 import './account.css'
 
 const Account = (props) => {
+  const history = useHistory();
+
+  //TODO: edit this to get the input 
+  const accountEdit = () => {
+    history.push("/account-edit")
+  }
+
   return (
     <div className="account-container">
       <Helmet>
@@ -51,7 +60,7 @@ const Account = (props) => {
           src="https://aheioqhobo.cloudimg.io/v7/_playground-bucket-v2.teleporthq.io_/3970f017-b141-4456-afd4-fb36d956eb37/cb7ad837-e657-4793-8890-9331b83f1812?org_if_sml=17105"
           className="account-rectangle99"
         />
-        <button className="account-basic-outline-button">
+        <button className="account-basic-outline-button" onClick={accountEdit}>
           <div className="account-framebasic-outlinelarge-base">
             <div className="account-content">
               <span className="account-text09">
