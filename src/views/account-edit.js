@@ -4,7 +4,19 @@ import { Helmet } from 'react-helmet'
 
 import './account-edit.css'
 
+import { useHistory } from "react-router-dom"
+
+
 const AccountEdit = (props) => {
+
+  const history = useHistory();
+
+  //TODO: edit this to get the input 
+  const account = () => {
+    history.push("/account")
+
+
+  }
   return (
     <div className="account-edit-container">
       <Helmet>
@@ -42,7 +54,7 @@ const AccountEdit = (props) => {
             <span className="account-edit-text07">+</span>
           </div>
         </div>
-        <button className="account-edit-basic-outline-button">
+        <button className="account-edit-basic-outline-button" onClick={account}>
           <div className="account-edit-framebasic-outlinelarge-base">
             <div className="account-edit-content1">
               <span className="account-edit-text08">

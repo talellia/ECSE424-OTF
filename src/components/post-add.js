@@ -2,7 +2,7 @@ import React from 'react'
 
 import './post-add.css'
 
-const PostAdd = (props) => {
+const PostAdd = ({onClick}) => {
   return (
     <div className="post-add-container">
       <div className="post-add-component16">
@@ -38,7 +38,7 @@ const PostAdd = (props) => {
           />
         </div>
         <div className="post-add-description">
-          <img
+          <textarea
             alt="Rectangle25I231"
             src="/playground_assets/rectangle25i231-l37d-600w.png"
             className="post-add-rectangle25"
@@ -57,7 +57,7 @@ const PostAdd = (props) => {
           </span>
         </div>
         <div className="post-add-description1">
-          <img
+          <input
             alt="Rectangle25I231"
             src="/playground_assets/rectangle25i231-nhcec-200h.png"
             className="post-add-rectangle251"
@@ -74,7 +74,7 @@ const PostAdd = (props) => {
           </span>
         </div>
         <div className="post-add-frame-t-a-g-box">
-          <img
+          <input
             alt="Rectangle26I231"
             src="/playground_assets/rectangle26i231-hcfc-200h.png"
             className="post-add-rectangle26"
@@ -83,7 +83,7 @@ const PostAdd = (props) => {
             <span>TAG:</span>
           </span>
         </div>
-        <div className="post-add-framebasic-outlinemedium-base">
+        <div className="post-add-framebasic-outlinemedium-base" onClick={onClick}>
           <div className="post-add-content">
             <span className="post-add-text13">
               <span>Post</span>
@@ -97,7 +97,7 @@ const PostAdd = (props) => {
             </div>
           </div>
         </div>
-        <button className="post-add-basic-outline-button">
+        <button className="post-add-basic-outline-button" onClick={onClick}>
           <div className="post-add-framebasic-outlinemedium-base1">
             <div className="post-add-content1">
               <span className="post-add-text15">
@@ -204,7 +204,7 @@ const PostAdd = (props) => {
               className="post-add-rectangle31"
             />
           </div>
-          <div className="post-add-framebasic-outlinemedium-base2">
+          <div className="post-add-framebasic-outlinemedium-base2" >
             <div className="post-add-content2">
               <span className="post-add-text30">
                 <span>Post</span>

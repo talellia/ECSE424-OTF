@@ -2,7 +2,7 @@ import React from 'react'
 
 import './big-add.css'
 
-const BigAdd = (props) => {
+const BigAdd = ({onClick}) => {
   return (
     <div className="big-add-container">
       <div className="big-add-add-pop-up">
@@ -103,7 +103,7 @@ const BigAdd = (props) => {
             className="big-add-rectangle31"
           />
         </div>
-        <div className="big-add-framebasic-outlinemedium-base">
+        <div className="big-add-framebasic-outlinemedium-base" onClick={onClick}>
           <div className="big-add-content">
             <span className="big-add-text13">
               <span>Apply</span>
@@ -117,8 +117,8 @@ const BigAdd = (props) => {
             </div>
           </div>
         </div>
-        <button className="big-add-basic-outline-button">
-          <div className="big-add-framebasic-outlinemedium-base1">
+        <button className="big-add-basic-outline-button" >
+          <div className="big-add-framebasic-outlinemedium-base1" onClick={onClick}>
             <div className="big-add-content1">
               <span className="big-add-text15">
                 <span>Back</span>
