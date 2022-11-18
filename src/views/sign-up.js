@@ -13,6 +13,10 @@ const SignUp = (props) => {
   const home = () => {
     history.push("/home")
   }
+
+  const contactUs = () =>{
+    history.push("/contact-us1")
+  }
   return (
     <div className="sign-up-container">
       <Helmet>
@@ -31,7 +35,7 @@ const SignUp = (props) => {
             src="https://aheioqhobo.cloudimg.io/v7/_playground-bucket-v2.teleporthq.io_/3970f017-b141-4456-afd4-fb36d956eb37/d112a30b-5fc4-42a1-a18d-22be7527ba46?org_if_sml=1607"
             className="sign-up-rectangle2"
           />
-          <a className="sign-up-text02" href="http://localhost:3000/contact-us1">Contact Us</a>
+          <a className="sign-up-text02" onClick={contactUs}>Contact Us</a>
           
         </div>
         <img
