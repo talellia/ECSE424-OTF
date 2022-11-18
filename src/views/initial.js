@@ -15,6 +15,10 @@ const Initial = (props) => {
   const signUp = () => {
     history.push("/sign-up")
   }
+
+  const contactUs = () => {
+    history.push("/contact-us1")
+  }
   return (
     <div className="initial-container">
       <Helmet>
@@ -162,7 +166,7 @@ const Initial = (props) => {
           className="initial-rectangle2"
         />
         <span className="initial-text32">
-          <span>Contact Us</span>
+          <span onClick={contactUs}>Contact Us</span>
         </span>
       </div>
     </div>

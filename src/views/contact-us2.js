@@ -5,7 +5,16 @@ import Menue from '../components/menue';
 
 import './contact-us2.css'
 
+import { useHistory } from "react-router-dom"
+
+
 const ContactUs2 = (props) => {
+
+  const history = useHistory();
+
+  const home = () => {
+    history.push("/home")
+  }
   return (
     <div className="contact-us2-container">
       <Helmet>
@@ -57,7 +66,7 @@ const ContactUs2 = (props) => {
             alt="Rectangle100I301"
             className="contact-us2-rectangle100"
           />
-          <button className="contact-us2-basic-outline-button1">
+          <button className="contact-us2-basic-outline-button1"onClick={home}>
             <div className="contact-us2-framebasic-outlinelarge-base">
               <div className="contact-us2-content">
                 <span className="contact-us2-text09">

@@ -13,6 +13,11 @@ const LogIn = (props) => {
   const home = () => {
     history.push("/home")
   }
+
+  
+  const contactUs = () => {
+    history.push("/contact-us1")
+  }
   return (
     <div className="log-in-container">
       <Helmet>
@@ -32,7 +37,7 @@ const LogIn = (props) => {
             className="log-in-rectangle2"
           />
           <span className="log-in-text">
-            <span>Contact Us</span>
+            <span onClick={contactUs}>Contact Us</span>
           </span>
         </div>
         <img

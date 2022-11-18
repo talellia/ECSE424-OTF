@@ -4,7 +4,16 @@ import { Helmet } from 'react-helmet'
 
 import './contact-us1.css'
 
+import { useHistory } from "react-router-dom"
+
+
 const ContactUs1 = (props) => {
+  const history = useHistory();
+
+  const initial = () => {
+    history.push("/")
+  }
+
   return (
     <div className="contact-us1-container">
       <Helmet>
@@ -48,7 +57,7 @@ const ContactUs1 = (props) => {
             src="https://aheioqhobo.cloudimg.io/v7/_playground-bucket-v2.teleporthq.io_/3970f017-b141-4456-afd4-fb36d956eb37/df19ff29-d3a5-43a2-b86a-a919a31c3a11?org_if_sml=17105"
             className="contact-us1-rectangle100"
           />
-          <button className="contact-us1-basic-outline-button1">
+          <button className="contact-us1-basic-outline-button1" onClick={initial}>
             <div className="contact-us1-framebasic-outlinelarge-base">
               <div className="contact-us1-content">
                 <span className="contact-us1-text09">

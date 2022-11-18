@@ -1,5 +1,5 @@
 .post-add-container {
-  width: 1309px;
+  width: 605px;
   height: 606px;
   display: flex;
   position: relative;
@@ -7,7 +7,7 @@
   flex-direction: column;
 }
 .post-add-component16 {
-  width: 100%;
+  width: 50%;
   height: 625px;
   display: flex;
   position: relative;
