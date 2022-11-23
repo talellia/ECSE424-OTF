@@ -210,76 +210,70 @@
   text-decoration: none;
 }
 .big-add-rectangle27 {
+  top: 20%;
+  left:20%;
+  position:absolute;
+
+}
+.rectangle1{
+  border-color: rgba(45, 34, 121, 1);
+  border-width: 3px;
   top: 12px;
   left: 54px;
   width: 100px;
   height: 36px;
   position: absolute;
-  border-color: transparent;
   border-radius: 10px;
 }
-.big-add-rectangle32 {
+.rectangle2{
+  border-color: rgba(45, 34, 121, 1);
+  border-width: 3px;
   top: 59px;
   left: 54px;
   width: 100px;
   height: 36px;
   position: absolute;
-  border-color: transparent;
   border-radius: 10px;
+}
+.rectangle3{
+  border-color: rgba(45, 34, 121, 1);
+  border-width: 3px;
+  top: 59px;
+  left: 186px;
+  width: 100px;
+  height: 36px;
+  position: absolute;
+  border-radius: 10px;
+}
+.rectangle4{
+  border-color: rgba(45, 34, 121, 1);
+  border-width: 3px;
+  top: 12px;
+  left: 186px;
+  width: 100px;
+  height: 36px;
+  position: absolute;
+  border-radius: 10px;
+}
+
+
+.big-add-rectangle32 {
+  top: 20%;
+  left:20%;
+  position:absolute;
+
 }
 .big-add-rectangle33 {
-  top: 59px;
-  left: 186px;
-  width: 100px;
-  height: 36px;
-  position: absolute;
-  border-color: transparent;
-  border-radius: 10px;
-}
-.big-add-rectangle34 {
-  top: 59px;
-  left: 317px;
-  width: 100px;
-  height: 36px;
-  position: absolute;
-  border-color: transparent;
-  border-radius: 10px;
-}
-.big-add-rectangle35 {
-  top: 59px;
-  left: 447px;
-  width: 100px;
-  height: 36px;
-  position: absolute;
-  border-color: transparent;
-  border-radius: 10px;
-}
-.big-add-rectangle29 {
-  top: 12px;
-  left: 447px;
-  width: 100px;
-  height: 36px;
-  position: absolute;
-  border-color: transparent;
-  border-radius: 10px;
+  top: 20%;
+  left:15%;
+  position:absolute;
+
 }
 .big-add-rectangle30 {
-  top: 12px;
-  left: 186px;
-  width: 100px;
-  height: 36px;
-  position: absolute;
-  border-color: transparent;
-  border-radius: 10px;
-}
-.big-add-rectangle31 {
-  top: 12px;
-  left: 317px;
-  width: 100px;
-  height: 36px;
-  position: absolute;
-  border-color: transparent;
-  border-radius: 10px;
+  top: 20%;
+  left:20%;
+  position:absolute;
+
 }
 .big-add-framebasic-outlinemedium-base {
   top: 525px;
@@ -399,4 +393,12 @@
   margin-right: 0;
   margin-bottom: 0;
   text-decoration: underline;
+}
+
+.test1{
+  background-color: blue;
+}
+
+.test2{
+  background-color: green;
 }

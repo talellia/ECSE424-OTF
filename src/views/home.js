@@ -1,3 +1,12 @@
+// ToDO: 1. big add 2
+//       2. Big add connections
+//       3. Filter remove things
+//       4. Clear bring things
+//       5. Filter sais NA if randum filter if
+//       6. Accoutn of URUR
+
+
+
 import React, {useState} from 'react'
 
 import { Helmet } from 'react-helmet';
@@ -14,15 +23,24 @@ var tempVal = {};
 
 const Home = (props) => {
 
+  const [isShownVal1, setIsShownVal1] = useState(false)
   const [isShown, setIsShown] = useState(false)
 
-  const handleClick = () => {
+  const handleClick = event => {
+    var id = event.currentTarget.id;
+    console.log(id);
+
     // 👇️ toggle shown state
-    setIsShown(current => !current)
+    if(id === "val1"){
+      setIsShownVal1(current => !current)
+    }
+    else{
+      setIsShown(current => !current)
+    }
   }
 
   const handleClose = () => {
-    setIsShown(current => false)
+    setIsShownVal1(current => false)
   }
 
   return (
@@ -123,10 +141,10 @@ const Home = (props) => {
           </div>
         </button>
         <Filter rootClassName="Filter"></Filter>
-        <div className="home-post">
+        <div id="val1" className="home-post" onClick={handleClick}>
           <div className="home-add1">
             <div className="home-rectangle141">
-              <img onClick={handleClick}
+              <img 
                 alt="Rectangle14I213"
                 src="https://aheioqhobo.cloudimg.io/v7/_playground-bucket-v2.teleporthq.io_/3970f017-b141-4456-afd4-fb36d956eb37/a3b8061e-fe71-498a-841f-53ffa398115a?org_if_sml=11012"
                 className="home-rectangle142"
@@ -144,14 +162,13 @@ const Home = (props) => {
             />
           </div>
           <span className="home-text14">
-            <span>Date</span>
+            <span>2022-11-14</span>
           </span>
         </div>
-        <div className="home-post1">
+        <div id="ow1" className="home-post1" onClick={handleClick}>
           <div className="home-add11">
             <div className="home-rectangle143">
               <img
-               onClick={handleClick}
                 alt="Rectangle14I214"
                 src="https://aheioqhobo.cloudimg.io/v7/_playground-bucket-v2.teleporthq.io_/3970f017-b141-4456-afd4-fb36d956eb37/263d3d04-065b-41fe-a56f-2a119ddf24bb?org_if_sml=11012"
                 className="home-rectangle144"
@@ -159,20 +176,69 @@ const Home = (props) => {
             </div>
             <span className="home-text16">
               <span>
-                LF1! Need a duelist in immortal rank to join our 4 stack.
+                LF Diamond Tank. Full team ready. 
               </span>
             </span>
             <img
               alt="ScreenShot20221011at3471I214"
-              src="https://aheioqhobo.cloudimg.io/v7/_playground-bucket-v2.teleporthq.io_/3970f017-b141-4456-afd4-fb36d956eb37/db21899e-db97-49c0-9596-a4c8d9f2e221?org_if_sml=128940"
+              src="/playground_assets/overwatch-200h.png"
               className="home-screen-shot20221011at34711"
             />
           </div>
           <span className="home-text18">
-            <span>Date</span>
+            <span>2022-11-20</span>
           </span>
         </div>
-        {isShown && <BigAdd onClick={handleClose} />}
+        <div id="ow2" className="home-post3" onClick={handleClick}>
+          <div className="home-add3">
+            <div className="home-rectangle143">
+              <img
+                alt="Rectangle14I214"
+                src="https://aheioqhobo.cloudimg.io/v7/_playground-bucket-v2.teleporthq.io_/3970f017-b141-4456-afd4-fb36d956eb37/263d3d04-065b-41fe-a56f-2a119ddf24bb?org_if_sml=11012"
+                className="home-rectangle144"
+              />
+            </div>
+            <span className="home-text16">
+              <span>
+                LF friend. I play all but not too good at it.
+              </span>
+            </span>
+            <img
+              alt="ScreenShot20221011at3471I214"
+              src="/playground_assets/overwatch-200h.png"
+              className="home-screen-shot20221011at34711"
+            />
+          </div>
+          <span className="home-text18">
+            <span>2022-11-23</span>
+          </span>
+        </div>
+        <div id="cod1" className="home-post4" onClick={handleClick}>
+          <div className="home-add3">
+            <div className="home-rectangle143">
+              <img
+                alt="Rectangle14I214"
+                src="https://aheioqhobo.cloudimg.io/v7/_playground-bucket-v2.teleporthq.io_/3970f017-b141-4456-afd4-fb36d956eb37/263d3d04-065b-41fe-a56f-2a119ddf24bb?org_if_sml=11012"
+                className="home-rectangle144"
+              />
+            </div>
+            <span className="home-text16">
+              <span>
+                MW. Grinding for all the guns come help.
+              </span>
+            </span>
+            <img
+              alt="ScreenShot20221011at3471I214"
+              src="/playground_assets/COD.png"
+              className="home-screen-shot20221011at34711"
+            />
+          </div>
+          <span className="home-text18">
+            <span>2022-11-20</span>
+          </span>
+        </div>
+        {isShownVal1 && <BigAdd rootClassName="val1"onClick={handleClose} />}
+        {isShown && <BigAdd rootClassName="ow1" onClick={handleClose} />}
       </div>
     </div>
   )
