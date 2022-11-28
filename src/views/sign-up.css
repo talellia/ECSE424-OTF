@@ -197,6 +197,7 @@
   position: absolute;
   border-color: transparent;
   border-radius: 20px;
+  background-color:white;
 }
 .sign-up-rectangle6 {
   top: 328px;
@@ -393,7 +394,7 @@
 .sign-up-text23 {
   color: rgba(45, 34, 121, 1);
   height: auto;
-  font-size: 24px;
+  font-size: 20px;
   align-self: auto;
   font-style: Bold;
   text-align: left;
@@ -442,6 +443,7 @@
   align-self: stretch;
   align-items: flex-start;
   border-color: transparent;
+  width: 48px;
 }
 .sign-up-text25 {
   color: rgba(217, 217, 217, 1);
@@ -458,6 +460,18 @@
   margin-bottom: 0;
   text-decoration: none;
 }
-.help1{
-  color:rgba(45, 34, 121, 1);
+.sign-up-framemodernlarge-base1:hover{
+  background-color: rgba(217, 217, 217, 1);
+  border-width: 4px;
+  border-color:rgba(45, 34, 121, 1);
+  border-radius: 8px;
+}
+.sign-up-framemodernlarge-base1:hover .sign-up-text25{
+  color: rgba(45, 34, 121, 1);
+}
+.sign-up-framemodernlarge-base:hover{
+  border-style: solid;
+  border-width: 4px;
+  border-color:rgba(45, 34, 121, 1);
+  border-radius: 8px;
 }
