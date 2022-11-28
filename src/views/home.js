@@ -59,8 +59,8 @@ const Home = (props) => {
             className="home-i-m-a-g-e5403411"
           />
           <span className="home-text">
-            <span className="home-text01">O</span>
-            <span className="home-text02">games</span>
+            <span className="home-text01">G</span>
+            <span className="home-text02">ames</span>
             <span className="home-text03">T</span>
             <span className="home-text04">eam</span>
             <span className="home-text05">F</span>
