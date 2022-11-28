@@ -1,19 +1,24 @@
 .games-you-play-sing-up-container {
+  top:505px;
+  left:952px;
   width: 100%;
   height: 400px;
   display: flex;
-  position: relative;
+  position: absolute;
   align-items: flex-start;
   flex-direction: column;
+  visibility: hidden;
+  z-index:100;
 }
 .games-you-play-sing-up-gameuplay {
   width: 100%;
-  height: 372px;
+  height: 272px;
   display: flex;
   position: relative;
   align-items: flex-start;
   flex-shrink: 0;
   border-color: transparent;
+  overflow-y: scroll;
 }
 .games-you-play-sing-up-rectangle12 {
   top: 0px;

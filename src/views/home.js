@@ -256,6 +256,7 @@ function   openMenue() {
 }
 
 function openfilter(){
+  console.log(document.getElementById("filter"));
   if( document.getElementById("filter").style.visibility === "visible"){
     document.getElementById("filter").style.visibility = "hidden";
     document.getElementById("filterGameChoise").style.visibility = "hidden";

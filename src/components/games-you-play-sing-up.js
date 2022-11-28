@@ -1,16 +1,20 @@
 import React from 'react'
+import PropTypes from 'prop-types';
 
 import './games-you-play-sing-up.css'
+var countGame = 0;
 
 const GamesYouPlaySingUp = (props) => {
+
   return (
-    <div className="games-you-play-sing-up-container">
-      <div className="games-you-play-sing-up-gameuplay">
+    <div id="dropdown" className={`games-you-play-sing-up-container ${props.rootClassName}`}>
+      
         <img
           alt="Rectangle127148"
           src="https://aheioqhobo.cloudimg.io/v7/_playground-bucket-v2.teleporthq.io_/3970f017-b141-4456-afd4-fb36d956eb37/cf5b9a57-08ab-4640-9c3b-a7bf1b936b12?org_if_sml=1706"
           className="games-you-play-sing-up-rectangle12"
         />
+      <div className="games-you-play-sing-up-gameuplay">
         <img
           alt="Rectangle147149"
           src="https://aheioqhobo.cloudimg.io/v7/_playground-bucket-v2.teleporthq.io_/3970f017-b141-4456-afd4-fb36d956eb37/b42775ff-e49b-4066-abdd-67c593234a15?org_if_sml=1426"
@@ -46,22 +50,20 @@ const GamesYouPlaySingUp = (props) => {
           src="https://aheioqhobo.cloudimg.io/v7/_playground-bucket-v2.teleporthq.io_/3970f017-b141-4456-afd4-fb36d956eb37/caf5b38f-742a-468c-a403-16b8fd62f2ed?org_if_sml=1706"
           className="games-you-play-sing-up-rectangle171"
         />
-        <div className="games-you-play-sing-up-checkboxset"></div>
-        <div className="games-you-play-sing-up-checkboxset1"></div>
-        <div className="games-you-play-sing-up-checkboxset2"></div>
-        <div className="games-you-play-sing-up-checkboxset3"></div>
-        <div className="games-you-play-sing-up-checkboxset4"></div>
-        <div className="games-you-play-sing-up-checkboxset5"></div>
-        <div className="games-you-play-sing-up-checkboxset6"></div>
-        <div className="games-you-play-sing-up-checkboxset7"></div>
-        <div className="games-you-play-sing-up-checkboxset8"></div>
-        <div className="games-you-play-sing-up-frameiconchevronbottom">
+        <input id="1" type="checkbox" className="games-you-play-sing-up-checkboxset"/>
+        <input id="2" type="checkbox" className="games-you-play-sing-up-checkboxset1"/>
+        <input id="3" type="checkbox" className="games-you-play-sing-up-checkboxset3"/>
+        <input id="4" type="checkbox" className="games-you-play-sing-up-checkboxset5"/>
+        <input id="5" type="checkbox" className="games-you-play-sing-up-checkboxset6"/>
+        <input id="6" type="checkbox" className="games-you-play-sing-up-checkboxset7"/>
+        <input id="7" type="checkbox" className="games-you-play-sing-up-checkboxset8"/>
+        <button className="games-you-play-sing-up-frameiconchevronbottom" onClick={hide}>
           <img
             alt="Vector7148"
             src="/playground_assets/vector7148-f1zl.svg"
             className="games-you-play-sing-up-vector"
           />
-        </div>
+        </button>
         <span className="games-you-play-sing-up-text">
           <span>CSGO</span>
         </span>
@@ -83,16 +85,29 @@ const GamesYouPlaySingUp = (props) => {
         <span className="games-you-play-sing-up-text12">
           <span>Fifa</span>
         </span>
-        <div className="games-you-play-sing-up-scrollbar-frame">
-          <img
-            alt="Scrollbar7152"
-            src="https://aheioqhobo.cloudimg.io/v7/_playground-bucket-v2.teleporthq.io_/3970f017-b141-4456-afd4-fb36d956eb37/8581e441-27ef-403a-be4c-a83cc89e50ec?org_if_sml=1229"
-            className="games-you-play-sing-up-scrollbar"
-          />
-        </div>
       </div>
     </div>
   )
+}
+
+function hide(){
+  document.getElementById("dropdown").style.visibility="hidden";
+  count();
+}
+function count(){
+  for (var i = 1; i <= 7;i++){
+    if(document.getElementById(i.toString()).checked){
+      countGame += 1;
+    }
+  }
+}
+
+GamesYouPlaySingUp.defaultProps = {
+  rootClassName: '',
+}
+
+GamesYouPlaySingUp.propTypes = {
+  rootClassName: PropTypes.string,
 }
 
 export default GamesYouPlaySingUp

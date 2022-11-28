@@ -1,10 +1,27 @@
 .sign-up-container {
   width: 100%;
-  height: 100%;
+  display: flex;
+  overflow: auto;
+  min-height: 100vh;
+  align-items: center;
+  flex-direction: column;
+}
+.sign-up-signin {
+  width: 100%;
+  height: 1080px;
+  display: flex;
+  overflow: hidden;
+  position: relative;
+  align-items: flex-start;
+  flex-shrink: 0;
+  border-color: transparent;
+  background-color: rgba(255, 255, 255, 1);
 }
 .sign-up-i-m-a-g-e5403411 {
-  width: 100%;
-  height: 100;
+  top: 0px;
+  left: -146px;
+  width: 2211px;
+  height: 1104px;
   position: absolute;
   border-color: transparent;
 }
@@ -170,6 +187,7 @@
   position: absolute;
   border-color: transparent;
   border-radius: 20px;
+  background-color:white;
 }
 .sign-up-rectangle11 {
   top: 664px;
@@ -439,4 +457,7 @@
   margin-right: 0;
   margin-bottom: 0;
   text-decoration: none;
+}
+.help1{
+  color:rgba(45, 34, 121, 1);
 }

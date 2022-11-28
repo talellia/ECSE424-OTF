@@ -6,18 +6,22 @@ import { useHistory } from "react-router-dom"
 import './log-in.css'
 
 const LogIn = (props) => {
-
   const history = useHistory();
 
-  //TODO: edit this to get the input 
-  const home = () => {
-    history.push("/home")
+  const logIn = () => {
+    var x = document.getElementById("password").value;
+
+    if(x === "ECSE424123." ){
+      history.push("/home")
+    }else{
+      alert("Wrong Password")
+    }
   }
 
-  
-  const contactUs = () => {
+  const ContactUs = () => {
     history.push("/contact-us1")
   }
+  
   return (
     <div className="log-in-container">
       <Helmet>
@@ -36,8 +40,8 @@ const LogIn = (props) => {
             src="https://aheioqhobo.cloudimg.io/v7/_playground-bucket-v2.teleporthq.io_/3970f017-b141-4456-afd4-fb36d956eb37/d6a9a15d-9b4e-4853-93f6-d0d74f57d1bc?org_if_sml=1607"
             className="log-in-rectangle2"
           />
-          <span className="log-in-text">
-            <span onClick={contactUs}>Contact Us</span>
+          <span className="log-in-text" onClick={ContactUs}>
+            <span>Contact Us</span>
           </span>
         </div>
         <img
@@ -45,23 +49,24 @@ const LogIn = (props) => {
           src="https://aheioqhobo.cloudimg.io/v7/_playground-bucket-v2.teleporthq.io_/3970f017-b141-4456-afd4-fb36d956eb37/80ba29e2-588e-44ee-b3dc-396ecd5dded4?org_if_sml=15412"
           className="log-in-rectangle1"
         />
-        <div className="initial-title">
-          <span className="initial-text19">
-            <span className="initial-text20">T</span>
-            <span className="smallspace"> </span>
-            <span>EAM</span>
+        <div className="log-in-title">
+          <span className="log-in-text04">
+            <span className="log-in-text05">T</span>
+            <span className="smallsplace">&nbsp</span>
+            <span className="titlecolor">EAM</span>
           </span>
-          <span className="initial-text22">
-            <span className="initial-text23">O</span>
-            <span>GAME</span>
+          <span className="log-in-text07">
+            <span className="log-in-text08">G</span>
+            <span className="smallsplace">&nbsp &nbsp &nbsp</span>
+            <span className="titlecolor">AME</span>
           </span>
-          <span className="initial-text25">
-            <span className="initial-text26">F</span>
-            <span className="smallspace"> </span>
-            <span>INDER</span>
+          <span className="log-in-text10">
+            <span className="log-in-text11">F</span>
+            <span className="smallsplace">&nbspsada </span>
+            <span className="titlecolor">INDER</span>
           </span>
         </div>
-        <button type="button" className="log-in-framemodernlarge-base" onClick={home}> 
+        <button className="log-in-framemodernlarge-base"  onClick={logIn}>
           <div className="log-in-content">
             <span className="log-in-text13">
               <span>LOG IN</span>
@@ -81,27 +86,15 @@ const LogIn = (props) => {
             src="https://aheioqhobo.cloudimg.io/v7/_playground-bucket-v2.teleporthq.io_/3970f017-b141-4456-afd4-fb36d956eb37/58d71eb3-9e34-41bf-b9eb-70f6c9e194bb?org_if_sml=13737"
             className="log-in-rectangle3"
           />
-          <span className="loginInfo">
-            <b>LOG IN</b>
-          </span>
-          <span className="loginInfo1">
-          </span>
           <span className="log-in-text15">
             <span>Password</span>
           </span>
-          <input type="text" id="password" name="password"
-            alt="Rectangle51793"
-            src="https://aheioqhobo.cloudimg.io/v7/_playground-bucket-v2.teleporthq.io_/3970f017-b141-4456-afd4-fb36d956eb37/2d3f24ec-499d-4d2c-a808-da3d163cbea4?org_if_sml=1890"
-            className="log-in-rectangle5"
-          />
-          <input type="text" id="username" name="username"
-            alt="Rectangle61794"
-            src="https://aheioqhobo.cloudimg.io/v7/_playground-bucket-v2.teleporthq.io_/3970f017-b141-4456-afd4-fb36d956eb37/ba9bc22e-672a-490a-b859-1596af4ba09d?org_if_sml=1890"
-            className="log-in-rectangle6"
-          />
+          <input id="password" type="password" className="log-in-rectangle5"/>
           <span className="log-in-text17">
             <span>User Name</span>
           </span>
+          <input className="log-in-rectangle6"/>
+
         </div>
       </div>
     </div>
