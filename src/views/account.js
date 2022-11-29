@@ -31,8 +31,8 @@ const Account = (props) => {
             className="home-i-m-a-g-e5403411"
           />
           <span className="home-text">
-            <span className="home-text01">O</span>
-            <span className="home-text02">games</span>
+            <span className="home-text01">G</span>
+            <span className="home-text02">ames</span>
             <span className="home-text03">T</span>
             <span className="home-text04">eam</span>
             <span className="home-text05">F</span>
@@ -77,6 +77,17 @@ const Account = (props) => {
           </div>
         </button>
         <div className="account-component18">
+          <span className="G1"> Valorant </span>
+          <span className="G2"> Valorant </span>
+          <span className="G3">  Overwatch </span>
+          <span className="G4">  CS:GO </span>
+          <span className="G5"> COD </span>
+          <a target="_blank" href="https://tracker.gg/valorant/profile/riot/Candrix%23552/overview" className="S1"> Silver Account </a>
+          <a target="_blank" href="https://tracker.gg/overwatch-2" className="S2"> Immortal Account</a>
+          <a target="_blank" href="https://tracker.gg/valorant/profile/riot/Candrix%23552/overview" className="S3"> Diamond Heal</a>
+          <a target="_blank" href="https://tracker.gg/overwatch-2" className="S4"> Gold Nova III</a>
+          <a target="_blank" href="https://tracker.gg/valorant/profile/riot/Candrix%23552/overview" className="S5"> Rookie </a>
+
           <img
             alt="Rectangle1003013"
             src="https://aheioqhobo.cloudimg.io/v7/_playground-bucket-v2.teleporthq.io_/3970f017-b141-4456-afd4-fb36d956eb37/ac15bd66-8547-451d-9aa6-f520e9c5f4a9?org_if_sml=13067"

@@ -1,6 +1,4 @@
 // ToDO: 1. big add 2
-//       2. Report
-//       6. Accoutn of URUR
 
 
 

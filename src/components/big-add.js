@@ -158,7 +158,7 @@ const BigAdd = (props, { onClick }) => {
 
             <span className="big-add-text02">
               <span>
-                <span>Potato22</span>
+                <span>Potato22</span>s
                 <br></br>
                 <span></span>
               </span>
