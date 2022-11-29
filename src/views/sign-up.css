@@ -475,3 +475,6 @@
   border-color:rgba(45, 34, 121, 1);
   border-radius: 8px;
 }
+.sign-up-text:hover{
+  color: rgba(217, 217, 217, 1);
+}

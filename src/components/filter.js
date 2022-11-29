@@ -623,6 +623,14 @@ function submitFilter(){
   document.getElementById("filter").style.visibility = "hidden";
   document.getElementById("filterGameChoise").style.visibility = "hidden";
   document.getElementById("filterVal").style.visibility = "hidden";
+
+  console.log(valorantRank);
+  if (valorantRank.length != 0){
+    document.getElementById("val1").style.visibility = "hidden";
+  }
+  document.getElementById("ow1").style.visibility = "hidden";
+  document.getElementById("ow2").style.visibility = "hidden";
+  document.getElementById("cod1").style.visibility = "hidden";
 }
 
 Filter.defaultProps = {

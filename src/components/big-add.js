@@ -1,15 +1,31 @@
 import React from 'react'
 import PropTypes from 'prop-types';
+import { useHistory } from "react-router-dom"
+
 
 
 import './big-add.css'
 
 const BigAdd = (props,{onClick}) => {
+  const history = useHistory();
+  
+  const URUP = () => {
+    history.push("/account1")
+  }
 
+  const close = () => {
+    document.getElementById("val1BigAdd").style.visibility = "hidden";
+  }
+  const message = () => {
+    history.push("/message")
+  }
+  const report = () => {
+
+  }
+  
     if(props.rootClassName === "val1"){
-      console.log("here");
       return (
-        <div className={`big-add-container ${props.rootClassName} `}>
+        <div id="val1BigAdd" className={`big-add-container ${props.rootClassName} `}>
           <div className="big-add-add-pop-up">
             <div className="big-add-rectangle15">
               <img
@@ -26,7 +42,7 @@ const BigAdd = (props,{onClick}) => {
               src="/playground_assets/screenshot20221011at34721396-l10o-200h.png"
               className="big-add-screen-shot20221011at3472"
             />
-            <div className="big-add-add-profile">
+            <div className="big-add-add-profile" onClick={URUP}>
               <img
                 alt="Rectangle16I139"
                 src="/playground_assets/rectangle16i139-3q0e-200h.png"
@@ -86,10 +102,10 @@ const BigAdd = (props,{onClick}) => {
                 <span className="big-add-rectangle30"> Practice </span>
               </div>
             </div>
-            <div className="big-add-framebasic-outlinemedium-base" onClick={onClick}>
+            <button className="big-add-framebasic-outlinemedium-base" onClick={message}>
               <div className="big-add-content">
                 <span className="big-add-text13">
-                  <span>Apply</span>
+                  <span>Message</span>
                 </span>
                 <div className="big-add-iconmedium">
                   <img
@@ -99,9 +115,9 @@ const BigAdd = (props,{onClick}) => {
                   />
                 </div>
               </div>
-            </div>
+            </button>
             <button className="big-add-basic-outline-button" >
-              <div className="big-add-framebasic-outlinemedium-base1" onClick={onClick}>
+              <div className="big-add-framebasic-outlinemedium-base1" onClick={close}>
                 <div className="big-add-content1">
                   <span className="big-add-text15">
                     <span>Back</span>
@@ -109,9 +125,10 @@ const BigAdd = (props,{onClick}) => {
                 </div>
               </div>
             </button>
-            <span className="big-add-text17">
+            <span className="big-add-text17" onClick={report}>
               <span>Report</span>
             </span>
+            
           </div>
         </div>
       )

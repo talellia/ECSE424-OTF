@@ -1,8 +1,5 @@
 // ToDO: 1. big add 2
-//       2. Big add connections
-//       3. Filter remove things
-//       4. Clear bring things
-//       5. Filter sais NA if randum filter if
+//       2. Report
 //       6. Accoutn of URUR
 
 
@@ -297,6 +294,10 @@ function clearFilter(){
   valLF.splice(0,valLF.length)
   valPlayStyle.splice(0,valPlayStyle.length)
   valorantRank.splice(0,valorantRank.length)
+  document.getElementById("val1").style.visibility="visible";
+  document.getElementById("ow1").style.visibility="visible";
+  document.getElementById("ow2").style.visibility="visible";
+  document.getElementById("cod1").style.visibility="visible";
 }
 function click(){
   document.getElementById("clearFilter").style.backgroundColor = "rgba(217, 217, 217, 1)";

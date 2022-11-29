@@ -1,7 +1,9 @@
 .big-add-container {
   width: 646px;
   height: 629px;
-  display: center;
+  top: 30%;
+  left: -200px;
+  position: inherit;
   justify-content: center;
   align-items: center;
 }
@@ -74,6 +76,10 @@
   align-items: flex-start;
   flex-shrink: 0;
   border-color: transparent;
+}
+.big-add-add-profile:hover{
+  background-color: rgba(46, 34, 121, 0.439);
+  border-radius: 10px;
 }
 .big-add-rectangle16 {
   top: 0px;
@@ -276,7 +282,7 @@
 .big-add-framebasic-outlinemedium-base {
   top: 525px;
   left: 438px;
-  width: 148px;
+  width: auto;
   height: 48px;
   display: flex;
   padding: 12px 24px;
@@ -289,6 +295,14 @@
   border-radius: 8px;
   flex-direction: column;
 }
+.big-add-framebasic-outlinemedium-base:hover{
+  background-color: rgba(45, 34, 121, 1);
+}
+.big-add-framebasic-outlinemedium-base:hover .big-add-text13{
+  position: inherit;
+  left: 10px;
+  color:white;
+}
 .big-add-content {
   display: flex;
   overflow: hidden;
@@ -300,7 +314,7 @@
 .big-add-text13 {
   color: rgba(45, 34, 121, 1);
   height: auto;
-  font-size: 16px;
+  font-size: 14px;
   align-self: auto;
   font-style: Bold;
   text-align: left;
@@ -324,19 +338,25 @@
 .big-add-icon {
   top: 0px;
   left: 0px;
-  width: 24px;
-  height: 24px;
+  width: 20px;
+  height: 20px;
   position: absolute;
 }
 .big-add-basic-outline-button {
   top: 527px;
   left: 304.5px;
-  width: 87px;
+  width: auto;
   display: flex;
   position: absolute;
   align-items: flex-start;
   border-color: transparent;
   flex-direction: column;
+}
+.big-add-framebasic-outlinemedium-base1:hover{
+  background-color: rgba(45, 34, 121, 1);
+}
+.big-add-framebasic-outlinemedium-base1:hover .big-add-text15{
+  color:white;
 }
 .big-add-framebasic-outlinemedium-base1 {
   display: flex;
@@ -361,7 +381,7 @@
 .big-add-text15 {
   color: rgba(45, 34, 121, 1);
   height: auto;
-  font-size: 16px;
+  font-size: 14px;
   align-self: auto;
   font-style: Bold;
   text-align: left;
@@ -391,6 +411,9 @@
   margin-right: 0;
   margin-bottom: 0;
   text-decoration: underline;
+}
+.big-add-text17{
+  color:blueviolet;
 }
 
 .test1{

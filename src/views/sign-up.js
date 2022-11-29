@@ -39,6 +39,10 @@ const SignUp = (props) => {
 
   }
 
+  const ContactUs = () => {
+    history.push("/contact-us1")
+  }
+
   const game = `Please select all the game you wish to look for teamates.
   You can always add games later on.`;
   const link = `Design Update. Next update will allow you to link a stat
@@ -62,7 +66,7 @@ const SignUp = (props) => {
             src="https://aheioqhobo.cloudimg.io/v7/_playground-bucket-v2.teleporthq.io_/3970f017-b141-4456-afd4-fb36d956eb37/d112a30b-5fc4-42a1-a18d-22be7527ba46?org_if_sml=1607"
             className="sign-up-rectangle2"
           />
-          <span className="sign-up-text">
+          <span className="sign-up-text" onClick={ContactUs}>
             <span>Contact Us</span>
           </span>
         </div>
