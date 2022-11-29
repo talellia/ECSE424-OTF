@@ -1,6 +1,7 @@
 import React from 'react'
 import PropTypes from 'prop-types';
 import { useHistory } from "react-router-dom"
+import Report from './report'
 
 
 
@@ -20,7 +21,7 @@ const BigAdd = (props,{onClick}) => {
     history.push("/message")
   }
   const report = () => {
-
+    document.getElementById("report").style.visibility = "visible";
   }
   
     if(props.rootClassName === "val1"){
@@ -128,7 +129,7 @@ const BigAdd = (props,{onClick}) => {
             <span className="big-add-text17" onClick={report}>
               <span>Report</span>
             </span>
-            
+            <Report rootClassName="Report"></Report>
           </div>
         </div>
       )
@@ -258,9 +259,9 @@ const BigAdd = (props,{onClick}) => {
                 </div>
               </div>
             </button>
-            <span className="big-add-text17">
+            <button className="big-add-text17">
               <span>Report</span>
-            </span>
+            </button>
           </div>
         </div>
       )
