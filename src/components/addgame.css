@@ -5,6 +5,7 @@
   position: relative;
   align-items: flex-start;
   flex-direction: column;
+  visibility: hidden;
 }
 .addgame-component20 {
   width: 100%;
@@ -14,6 +15,10 @@
   align-items: flex-start;
   flex-shrink: 0;
   border-color: transparent;
+  position: absolute;
+  top: 373px;
+  left: 1000px;
+  z-index: 1000;
 }
 .addgame-rectangle110 {
   top: 0px;
@@ -21,8 +26,9 @@
   width: 396px;
   height: 450px;
   position: absolute;
-  border-color: transparent;
+  border-color:rgba(45, 34, 121, 1);
   border-radius: 20px;
+  border-width: 5px;
 }
 .addgame-text {
   top: 90px;
@@ -64,7 +70,7 @@
 .addgame-framemodernlarge-base {
   top: 346px;
   left: 230px;
-  width: 134px;
+  width: auto;
   display: flex;
   padding: 16px 32px;
   position: absolute;
@@ -74,6 +80,15 @@
   border-radius: 8px;
   flex-direction: column;
   background-color: rgba(45, 34, 121, 1);
+}
+.addgame-framemodernlarge-base:hover {
+  background-color:rgba(217, 217, 217, 1);
+  border-color: rgba(45, 34, 121, 1);
+  border-radius: 8px;
+  border-width: 5px;
+}
+.addgame-framemodernlarge-base:hover .addgame-text04{
+  color:rgba(45, 34, 121, 1);
 }
 .addgame-content {
   display: flex;
@@ -127,10 +142,14 @@
   width: 100%;
   height: 235px;
   display: flex;
-  position: relative;
+  position: absolute;
   align-items: flex-start;
   flex-shrink: 0;
   border-color: transparent;
+  left: 1110px;
+  top: 490px;
+  z-index: 1000;
+  visibility: hidden;
 }
 .addgame-rectangle12 {
   top: 0px;

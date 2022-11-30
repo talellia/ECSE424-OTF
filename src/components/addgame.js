@@ -5,7 +5,7 @@ import './addgame.css'
 
 const Addgame = (props) => {
   return (
-    <div id="addgame" className={`addgame-container${props.rootClassName} `}>
+    <div id="addgame" className={`addgame-container ${props.rootClassName} `}>
       <div className="addgame-component20">
         <img
           src="https://aheioqhobo.cloudimg.io/v7/_playground-bucket-v2.teleporthq.io_/3970f017-b141-4456-afd4-fb36d956eb37/922cfa68-43b7-42db-89fa-016a9f800f4f?org_if_sml=12399"
@@ -18,19 +18,19 @@ const Addgame = (props) => {
         <span className="addgame-text02">
           <span>Stats Link</span>
         </span>
-        <div className="addgame-framemodernlarge-base">
+        <button className="addgame-framemodernlarge-base" onClick={done}>
           <div className="addgame-content">
             <span className="addgame-text04">
               <span>Add +</span>
             </span>
           </div>
-        </div>
+        </button>
         <img
           src="https://aheioqhobo.cloudimg.io/v7/_playground-bucket-v2.teleporthq.io_/3970f017-b141-4456-afd4-fb36d956eb37/8c44f441-6720-4b10-8fb6-8b61ccee86cc?org_if_sml=1788"
           alt="Rectangle63512"
           className="addgame-rectangle6"
         />
-        <img
+        <input
           src="https://aheioqhobo.cloudimg.io/v7/_playground-bucket-v2.teleporthq.io_/3970f017-b141-4456-afd4-fb36d956eb37/e590d918-1197-4103-a285-1f4538cc1363?org_if_sml=1788"
           alt="Rectangle1113512"
           className="addgame-rectangle111"
@@ -39,9 +39,10 @@ const Addgame = (props) => {
           src="/playground_assets/vector23512-b34b.svg"
           alt="Vector23512"
           className="addgame-vector2"
+          onClick={showlist}
         />
       </div>
-      <div className="addgame-gameuplay">
+      <div id="gameslist" className="addgame-gameuplay">
         <img
           src="https://aheioqhobo.cloudimg.io/v7/_playground-bucket-v2.teleporthq.io_/3970f017-b141-4456-afd4-fb36d956eb37/54dea78c-74ec-4a2e-8ba6-0365b5548513?org_if_sml=1572"
           alt="Rectangle123512"
@@ -82,15 +83,13 @@ const Addgame = (props) => {
           alt="Rectangle173512"
           className="addgame-rectangle171"
         />
-        <div className="addgame-checkboxset"></div>
-        <div className="addgame-checkboxset1"></div>
-        <div className="addgame-checkboxset2"></div>
-        <div className="addgame-checkboxset3"></div>
-        <div className="addgame-checkboxset4"></div>
-        <div className="addgame-checkboxset5"></div>
-        <div className="addgame-checkboxset6"></div>
-        <div className="addgame-checkboxset7"></div>
-        <div className="addgame-checkboxset8"></div>
+        <input type="checkbox" className="addgame-checkboxset"/>
+        <input type="checkbox" className="addgame-checkboxset1"/>
+        <input type="checkbox" className="addgame-checkboxset3"/>
+        <input type="checkbox" className="addgame-checkboxset5"/>
+        <input type="checkbox" className="addgame-checkboxset6"/>
+        <input type="checkbox" className="addgame-checkboxset7"/>
+        <input type="checkbox" className="addgame-checkboxset8"/>
         <span className="addgame-text06">
           <span>CSGO</span>
         </span>
@@ -120,6 +119,7 @@ const Addgame = (props) => {
           />
         </div>
         <img
+          onClick={hidelist}
           src="/playground_assets/vector33512-djha.svg"
           alt="Vector33512"
           className="addgame-vector3"
@@ -127,6 +127,31 @@ const Addgame = (props) => {
       </div>
     </div>
   )
+}
+function showlist(){
+    document.getElementById("gameslist").style.visibility="visible";
+}
+function hidelist(){
+  document.getElementById("gameslist").style.visibility="hidden";
+
+}
+
+
+function done() {
+  document.getElementById("addgame").style.visibility="hidden";
+  document.getElementById("blur1").style.filter="blur(0px)"
+  document.getElementById("blur2").style.filter="blur(0px)"
+  document.getElementById("blur3").style.filter="blur(0px)"
+  document.getElementById("blur4").style.filter="blur(0px)"
+  document.getElementById("blur5").style.filter="blur(0px)"
+  document.getElementById("blur6").style.filter="blur(0px)"
+  document.getElementById("blur7").style.filter="blur(0px)"
+  document.getElementById("blur8").style.filter="blur(0px)"
+  document.getElementById("blur9").style.filter="blur(0px)"
+  document.getElementById("blur10").style.filter="blur(0px)"
+  document.getElementById("blur11").style.filter="blur(0px)"
+  document.getElementById("g51").style.visibility="visible"
+  document.getElementById("s51").style.visibility="visible"
 }
 Addgame.defaultProps = {
   rootClassName: '',

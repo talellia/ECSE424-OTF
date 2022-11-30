@@ -6,9 +6,9 @@ import { useHistory } from "react-router-dom"
 
 
 
-import './account.css'
+import './accountcopy.css'
 
-const Account = (props) => {
+const Accountcopy = (props) => {
   const history = useHistory();
 
   //TODO: edit this to get the input 
@@ -17,7 +17,7 @@ const Account = (props) => {
   }
 
   return (
-    <div className="account-container">
+    <div className="account-container2">
       <Helmet>
         <title>Account - exported project</title>
         <meta property="og:title" content="Account - exported project" />
@@ -155,4 +155,4 @@ function   openMenue() {
   }
 }
 
-export default Account
+export default Accountcopy
