@@ -6,3 +6,26 @@
   align-items: center;
   flex-direction: column;
 }
+
+.the-button{
+  position: relative;
+  bottom: -360px;
+  left: -150px;
+  width: 150%;
+  z-index: 1;
+}
+
+.the-button2{
+  position: relative;
+  bottom: -360px;
+  left: 117px;
+  width: 150%;
+  z-index: 1;
+}
+
+.text-button{
+  position: absolute;
+  bottom: 8px;
+  left: 30px;
+  color: rgb(255, 254, 254)
+}
