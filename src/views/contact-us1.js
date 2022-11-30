@@ -73,7 +73,7 @@ const ContactUs1 = (props) => {
               </div>
             </div>
           </button>
-          <img
+          <input
             alt="Rectangle63014"
             src="https://aheioqhobo.cloudimg.io/v7/_playground-bucket-v2.teleporthq.io_/3970f017-b141-4456-afd4-fb36d956eb37/cd3a823d-3a84-4f27-aea2-8ea8b5ead66f?org_if_sml=11104"
             className="contact-us1-rectangle6"
@@ -89,7 +89,7 @@ const ContactUs1 = (props) => {
           <span className="contact-us1-text13">
             <span>Reason</span>
           </span>
-          <img
+          <textarea
             alt="Rectangle1013014"
             src="https://aheioqhobo.cloudimg.io/v7/_playground-bucket-v2.teleporthq.io_/3970f017-b141-4456-afd4-fb36d956eb37/2da38e0d-6084-4b67-adad-f84cd0d7a6d7?org_if_sml=12761"
             className="contact-us1-rectangle101"
@@ -98,6 +98,7 @@ const ContactUs1 = (props) => {
             <span>Message</span>
           </span>
           <img
+          onClick={showReasons}
             alt="Vector13014"
             src="/playground_assets/vector13014-8mo9.svg"
             className="contact-us1-vector1"
@@ -106,6 +107,9 @@ const ContactUs1 = (props) => {
       </div>
     </div>
   )
+}
+function showReasons(){
+  
 }
 
 export default ContactUs1

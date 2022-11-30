@@ -30,8 +30,8 @@ const ContactUs2 = (props) => {
             className="home-i-m-a-g-e5403411"
           />
           <span className="home-text">
-            <span className="home-text01">O</span>
-            <span className="home-text02">games</span>
+            <span className="home-text01">G</span>
+            <span className="home-text02">ames</span>
             <span className="home-text03">T</span>
             <span className="home-text04">eam</span>
             <span className="home-text05">F</span>
@@ -82,7 +82,7 @@ const ContactUs2 = (props) => {
               </div>
             </div>
           </button>
-          <img
+          <textarea
             src="https://aheioqhobo.cloudimg.io/v7/_playground-bucket-v2.teleporthq.io_/3970f017-b141-4456-afd4-fb36d956eb37/bf03592a-cdf3-49b0-a76e-85205a615e22?org_if_sml=12761"
             alt="Rectangle101I301"
             className="contact-us2-rectangle101"

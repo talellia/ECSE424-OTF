@@ -171,16 +171,16 @@
 .contact-us1-basic-outline-button1 {
   top: 598px;
   left: 781px;
-  width: 165px;
+  width: auto;
   display: flex;
   position: absolute;
-  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25) ;
   align-items: flex-start;
   border-color: transparent;
   flex-direction: column;
 }
 .contact-us1-framebasic-outlinelarge-base {
   display: flex;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25) ;
   padding: 16px 32px;
   position: relative;
   align-self: stretch;
@@ -192,6 +192,21 @@
   flex-direction: column;
   background-color: rgba(45, 34, 121, 1);
 }
+.contact-us1-framebasic-outlinelarge-base:hover {
+  background-color: #d9d9d9;
+  border-color: rgba(45, 34, 121, 1);
+  border-style: solid;
+  border-width: 5px;
+  border-radius: 8px;
+}
+.contact-us1-framebasic-outlinelarge-base:hover .contact-us1-text09 {
+color: #2d2279;
+position: inherit;
+left:10px;
+}
+.contact-us1-framebasic-outlinelarge-base:hover .contact-us1-iconlarge {
+  visibility: hidden;
+  }
 .contact-us1-content {
   display: flex;
   overflow: hidden;
@@ -237,8 +252,9 @@
   width: 700px;
   height: 72px;
   position: absolute;
-  border-color: transparent;
+  border-color: rgba(45, 34, 121, 1);
   border-radius: 20px;
+  border-width: 5px;
 }
 .contact-us1-text11 {
   top: 160px;
@@ -293,8 +309,9 @@
   width: 698px;
   height: 404px;
   position: absolute;
-  border-color: transparent;
+  border-color: rgba(45, 34, 121, 1);
   border-radius: 20px;
+  border-width: 5px;
 }
 .contact-us1-text15 {
   top: 80px;

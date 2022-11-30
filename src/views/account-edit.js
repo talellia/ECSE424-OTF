@@ -6,7 +6,6 @@ import './account-edit.css'
 
 import { useHistory } from "react-router-dom"
 
-
 const AccountEdit = (props) => {
 
   const history = useHistory();
