@@ -14,6 +14,7 @@ import LogIn from './views/log-in'
 import ContactUs2 from './views/contact-us2'
 import Post from './views/post'
 import Account1 from './views/account1'
+import Accountcopy from './views/accountcopy'
 
 const App = () => {
   return (
@@ -30,6 +31,7 @@ const App = () => {
         <Route component={ContactUs2} exact path="/contact-us2" />
         <Route component={Post} exact path="/post" />
         <Route component={Account1} exact path="/account1" />
+        <Route component={Accountcopy} exact path="/accountcopy" />
       </div>
     </Router>
   )

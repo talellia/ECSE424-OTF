@@ -444,6 +444,27 @@
   z-index: 100;
   visibility: hidden;
 }
+.G51{
+
+  top: 400px;
+  left: 34px;
+  color: rgb(45, 34, 121);
+  width: 342px;
+  height: auto;
+  position: absolute;
+  font-size: 25px;
+  align-self: auto;
+  font-style: Bold;
+  text-align: center;
+  font-family: Inter;
+  font-weight: 700;
+  line-height: 32px;
+  font-stretch: normal;
+  margin-right: 0;
+  margin-bottom: 0;
+  text-decoration: none;
+  z-index: 100;
+}
 .S3{
   top: 250px;
   left: 479px;
@@ -504,4 +525,24 @@
   text-decoration: none;
   z-index: 100;
   visibility: hidden;
+}
+.S51{
+  top: 400px;
+  left: 479px;
+  color: rgb(45, 34, 121);
+  width: 342px;
+  height: auto;
+  position: absolute;
+  font-size: 25px;
+  align-self: auto;
+  font-style: Bold;
+  text-align: center;
+  font-family: Inter;
+  font-weight: 700;
+  line-height: 32px;
+  font-stretch: normal;
+  margin-right: 0;
+  margin-bottom: 0;
+  text-decoration: none;
+  z-index: 100;
 }
