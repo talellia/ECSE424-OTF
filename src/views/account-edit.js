@@ -1,5 +1,5 @@
 import React from 'react'
-
+import Addgame from '../components/addgame'
 import { Helmet } from 'react-helmet'
 
 import './account-edit.css'
@@ -36,8 +36,8 @@ const AccountEdit = (props) => {
             className="account-edit-rectangle13"
           />
           <span className="account-edit-text">
-            <span className="account-edit-text01">O</span>
-            <span className="account-edit-text02">games</span>
+            <span className="account-edit-text01">G</span>
+            <span className="account-edit-text02">ames</span>
             <span className="account-edit-text03">T</span>
             <span className="account-edit-text04">eam</span>
             <span className="account-edit-text05">F</span>
@@ -49,11 +49,11 @@ const AccountEdit = (props) => {
           src="https://aheioqhobo.cloudimg.io/v7/_playground-bucket-v2.teleporthq.io_/3970f017-b141-4456-afd4-fb36d956eb37/59f0faa2-04e7-492d-a93f-579d397b0e16?org_if_sml=17105"
           className="account-edit-rectangle99"
         />
-        <div className="account-edit-framemodernlarge-base">
+        <button className="account-edit-framemodernlarge-base" onClick={addgame}>
           <div className="account-edit-content">
             <span className="account-edit-text07">+</span>
           </div>
-        </div>
+        </button>
         <button className="account-edit-basic-outline-button" onClick={account}>
           <div className="account-edit-framebasic-outlinelarge-base">
             <div className="account-edit-content1">
@@ -71,6 +71,17 @@ const AccountEdit = (props) => {
           </div>
         </button>
         <div className="account-edit-component18">
+        <span className="G1"> Valorant </span>
+          <span className="G2"> Valorant </span>
+          <span className="G3">  Overwatch </span>
+          <span className="G4">  CS:GO </span>
+          <span className="G5"> COD </span>
+          <a target="_blank" href="https://tracker.gg/valorant/profile/riot/Candrix%23552/overview" className="S1"> Silver Account </a>
+          <a target="_blank" href="https://tracker.gg/overwatch-2" className="S2"> Immortal Account</a>
+          <a target="_blank" href="https://tracker.gg/valorant/profile/riot/Candrix%23552/overview" className="S3"> Diamond Heal</a>
+          <a target="_blank" href="https://tracker.gg/overwatch-2" className="S4"> Gold Nova III</a>
+          <a target="_blank" href="https://tracker.gg/valorant/profile/riot/Candrix%23552/overview" className="S5"> Rookie </a>
+
           <img
             alt="Rectangle100I351"
             src="https://aheioqhobo.cloudimg.io/v7/_playground-bucket-v2.teleporthq.io_/3970f017-b141-4456-afd4-fb36d956eb37/0dfbb31f-e9ba-4f4d-923a-12717172d272?org_if_sml=13067"
@@ -127,12 +138,12 @@ const AccountEdit = (props) => {
             </div>
           </div>
         </div>
-        <img
+        <input
           alt="Rectangle63511"
           src="https://aheioqhobo.cloudimg.io/v7/_playground-bucket-v2.teleporthq.io_/3970f017-b141-4456-afd4-fb36d956eb37/fee56a40-93ec-4d28-869a-a24e86a37827?org_if_sml=1899"
           className="account-edit-rectangle6"
         />
-        <img
+        <input
           alt="Rectangle1093511"
           src="https://aheioqhobo.cloudimg.io/v7/_playground-bucket-v2.teleporthq.io_/3970f017-b141-4456-afd4-fb36d956eb37/72be59f7-7830-479f-b78d-304139ffd033?org_if_sml=1899"
           className="account-edit-rectangle109"
@@ -148,9 +159,15 @@ const AccountEdit = (props) => {
         <span className="account-edit-text18">
           <span>Email</span>
         </span>
+        <Addgame rootClassName="addgame"></Addgame>
       </div>
     </div>
   )
 }
+
+function addgame(){
+  document.getElementById("addgame").style.visibility="visible";
+}
+
 
 export default AccountEdit
