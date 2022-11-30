@@ -13,14 +13,35 @@ const Post = (props) => {
 
   const [isShown, setIsShown] = useState(false)
 
+  const [isnewAdd, setIsNewAdd] = useState(false)
+
+  const [buttonPlace, setButtonPlace] = useState("the-button")
+  const[isEdit, setIsEdit] = useState(false)
+
   const handleClick = () => {
     // 👇️ toggle shown state
     setIsShown(current => !current)
+    setIsEdit(current => false)
   }
+
+  const handleClick1 = () => {
+    // 👇️ toggle shown state
+    setIsNewAdd(current => true)
+    setButtonPlace("the-button2")
+    setIsShown(current => !current)
+  }
+
 
   const handleClose = () => {
     setIsShown(current => false)
   }
+
+    const handleClick2 = () => {
+    // 👇️ toggle shown state
+    setIsShown(current => !current)
+    setIsEdit(current => true)
+    }
+
   return (
     <div className="message-container">
       <Helmet>
@@ -63,7 +84,7 @@ const Post = (props) => {
         <div className="home-post">
           <div className="home-add1">
             <div className="home-rectangle141">
-              <img onClick={handleClick}
+              <img onClick={handleClick2}
                 alt="Rectangle14I213"
                 src="https://aheioqhobo.cloudimg.io/v7/_playground-bucket-v2.teleporthq.io_/3970f017-b141-4456-afd4-fb36d956eb37/a3b8061e-fe71-498a-841f-53ffa398115a?org_if_sml=11012"
                 className="home-rectangle142"
@@ -87,7 +108,7 @@ const Post = (props) => {
         <div className="home-post1">
           <div className="home-add11">
             <div className="home-rectangle143">
-              <img onClick={handleClick}
+              <img onClick={handleClick2}
                 alt="Rectangle14I214"
                 src="https://aheioqhobo.cloudimg.io/v7/_playground-bucket-v2.teleporthq.io_/3970f017-b141-4456-afd4-fb36d956eb37/263d3d04-065b-41fe-a56f-2a119ddf24bb?org_if_sml=11012"
                 className="home-rectangle144"
@@ -108,7 +129,40 @@ const Post = (props) => {
             <span>Date</span>
           </span>
         </div>
-        {isShown && <Add onClick={handleClose} />}
+        {isnewAdd && <div className="home-post2">
+          <div className="home-add11">
+            <div className="home-rectangle143">
+              <img onClick={handleClick2}
+                alt="Rectangle14I214"
+                src="https://aheioqhobo.cloudimg.io/v7/_playground-bucket-v2.teleporthq.io_/3970f017-b141-4456-afd4-fb36d956eb37/263d3d04-065b-41fe-a56f-2a119ddf24bb?org_if_sml=11012"
+                className="home-rectangle144"
+              />
+            </div>
+            <span className="home-text16">
+              <span>
+                LF1! Need a duelist in immortal rank to join our 4 stack.
+              </span>
+            </span>
+            <img
+              alt="ScreenShot20221011at3471I214"
+              src="https://aheioqhobo.cloudimg.io/v7/_playground-bucket-v2.teleporthq.io_/3970f017-b141-4456-afd4-fb36d956eb37/db21899e-db97-49c0-9596-a4c8d9f2e221?org_if_sml=128940"
+              className="home-screen-shot20221011at34711"
+            />
+          </div>
+          <span className="home-text18">
+            <span>Date</span>
+          </span>
+        </div>
+}
+        {!isShown && <div className={buttonPlace} onClick={handleClick}>
+        <img
+              type="button"
+              src="/playground_assets/rectangle35i139-pw0c-200h.png"
+              className="button-post"
+            />
+            <span className='text-button'>Post</span>
+        </div>}
+        {isShown && <Add onClick={handleClose} postAdd={handleClick1} isEdit={isEdit} />}
       </div>
     </div>
   )

@@ -2,7 +2,8 @@ import React from 'react'
 
 import './post-add.css'
 
-const PostAdd = ({onClick}) => {
+const PostAdd = ({onClick, postAdd, isEdit}) => {
+  console.log(isEdit)
   return (
     <div className="post-add-container">
       <div className="post-add-component16">
@@ -83,7 +84,7 @@ const PostAdd = ({onClick}) => {
             <span>TAG:</span>
           </span>
         </div>
-        <div className="post-add-framebasic-outlinemedium-base" onClick={onClick}>
+        {!isEdit &&<button className="post-add-framebasic-outlinemedium-base" onClick={postAdd}>
           <div className="post-add-content">
             <span className="post-add-text13">
               <span>Post</span>
@@ -96,7 +97,23 @@ const PostAdd = ({onClick}) => {
               />
             </div>
           </div>
-        </div>
+        </button>
+}
+        {isEdit && <button className="post-add-framebasic-outlinemedium-base" onClick={onClick}>
+          <div className="post-add-content">
+            <span className="post-add-text13">
+              <span>Edit</span>
+            </span>
+            <div className="post-add-iconmedium">
+              <img
+                alt="IconI231"
+                src="/playground_assets/iconi231-ro7d.svg"
+                className="post-add-icon"
+              />
+            </div>
+          </div>
+        </button>
+}
         <button className="post-add-basic-outline-button" onClick={onClick}>
           <div className="post-add-framebasic-outlinemedium-base1">
             <div className="post-add-content1">
