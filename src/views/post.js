@@ -16,7 +16,14 @@ const Post = (props) => {
   const [isnewAdd, setIsNewAdd] = useState(false)
 
   const [buttonPlace, setButtonPlace] = useState("the-button")
+
   const[isEdit, setIsEdit] = useState(false)
+
+  const[title, setTitle] = useState()
+
+  function putTitle(something){
+    setTitle(something)
+  } 
 
   const handleClick = () => {
     // 👇️ toggle shown state
@@ -84,7 +91,7 @@ const Post = (props) => {
         <div className="home-post">
           <div className="home-add1">
             <div className="home-rectangle141">
-              <img onClick={handleClick2}
+              <img onClick={() => {handleClick2(); putTitle("Test123");}}
                 alt="Rectangle14I213"
                 src="https://aheioqhobo.cloudimg.io/v7/_playground-bucket-v2.teleporthq.io_/3970f017-b141-4456-afd4-fb36d956eb37/a3b8061e-fe71-498a-841f-53ffa398115a?org_if_sml=11012"
                 className="home-rectangle142"
@@ -92,7 +99,7 @@ const Post = (props) => {
             </div>
             <span className="home-text12">
               <span>
-                LF1! Need a duelist in immortal rank to join our 4 stack.
+                Test123
               </span>
             </span>
             <img
@@ -102,13 +109,13 @@ const Post = (props) => {
             />
           </div>
           <span className="home-text14">
-            <span>Date</span>
+            <span>2022-11-26</span>
           </span>
         </div>
         <div className="home-post1">
           <div className="home-add11">
             <div className="home-rectangle143">
-              <img onClick={handleClick2}
+              <img onClick={() => {handleClick2(); putTitle("LF1! Need a duelist in immortal rank to join our 4 stack.");}}
                 alt="Rectangle14I214"
                 src="https://aheioqhobo.cloudimg.io/v7/_playground-bucket-v2.teleporthq.io_/3970f017-b141-4456-afd4-fb36d956eb37/263d3d04-065b-41fe-a56f-2a119ddf24bb?org_if_sml=11012"
                 className="home-rectangle144"
@@ -126,13 +133,13 @@ const Post = (props) => {
             />
           </div>
           <span className="home-text18">
-            <span>Date</span>
+            <span>2022-11-27</span>
           </span>
         </div>
         {isnewAdd && <div className="home-post2">
           <div className="home-add11">
             <div className="home-rectangle143">
-              <img onClick={handleClick2}
+              <img onClick={() => {handleClick2(); putTitle("Want to hang out");}}
                 alt="Rectangle14I214"
                 src="https://aheioqhobo.cloudimg.io/v7/_playground-bucket-v2.teleporthq.io_/3970f017-b141-4456-afd4-fb36d956eb37/263d3d04-065b-41fe-a56f-2a119ddf24bb?org_if_sml=11012"
                 className="home-rectangle144"
@@ -140,7 +147,7 @@ const Post = (props) => {
             </div>
             <span className="home-text16">
               <span>
-                LF1! Need a duelist in immortal rank to join our 4 stack.
+                Want to hang out
               </span>
             </span>
             <img
@@ -150,7 +157,7 @@ const Post = (props) => {
             />
           </div>
           <span className="home-text18">
-            <span>Date</span>
+            <span>2022-11-30</span>
           </span>
         </div>
 }
@@ -162,7 +169,7 @@ const Post = (props) => {
             />
             <span className='text-button'>Post</span>
         </div>}
-        {isShown && <Add onClick={handleClose} postAdd={handleClick1} isEdit={isEdit} />}
+        {isShown && <Add onClick={() => {handleClick(); putTitle("");}} postAdd={handleClick1} isEdit={isEdit} props={{title: title}} />}
       </div>
     </div>
   )

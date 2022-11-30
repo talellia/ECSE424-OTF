@@ -1,9 +1,12 @@
-import React from 'react'
+import React, {useState} from 'react'
 
 import './post-add.css'
 
-const PostAdd = ({onClick, postAdd, isEdit}) => {
-  console.log(isEdit)
+const PostAdd = ({onClick, postAdd, isEdit, props}) => {
+
+  const[title, setTitle] = useState(props.title)
+
+
   return (
     <div className="post-add-container">
       <div className="post-add-component16">
@@ -39,7 +42,7 @@ const PostAdd = ({onClick, postAdd, isEdit}) => {
           />
         </div>
         <div className="post-add-description">
-          <textarea
+          <input
             alt="Rectangle25I231"
             src="/playground_assets/rectangle25i231-l37d-600w.png"
             className="post-add-rectangle25"
@@ -62,6 +65,8 @@ const PostAdd = ({onClick, postAdd, isEdit}) => {
             alt="Rectangle25I231"
             src="/playground_assets/rectangle25i231-nhcec-200h.png"
             className="post-add-rectangle251"
+            value={title}
+            onChange={(e) => setTitle(e.target.value)}
           />
           <span className="post-add-text09">
             <span>
